@@ -29,15 +29,10 @@ class llm_model:
             self.model = transformers.LlamaForCausalLM.from_pretrained('axiong/PMC_LLaMA_13B').to(self.device, dtype=torch.float16)
             self.tokenizer = transformers.LlamaTokenizer.from_pretrained('axiong/PMC_LLaMA_13B')
         
-        if self.model_name== 'ClinicalBERT':
+        if self.model_name== 'BioClinicalBERT':
             self.device = 'cuda' if torch.cuda.is_available() and use_GPU else 'cpu'  # Check for GPU
             self.model=transformers.AutoModelForCausalLM.from_pretrained('emilyalsentzer/Bio_ClinicalBERT').to(self.device, dtype=torch.float16)
             self.tokenizer=transformers.AutoTokenizer.from_pretrained('emilyalsentzer/Bio_ClinicalBERT')
-        
-        if self.model_name=='BioMegatron-11B':
-            self.device = 'cuda' if torch.cuda.is_available() and use_GPU else 'cpu'
-            self.model=transformers.AutoModelForCausalLM.from_pretrained('emilyalsentzer/BioMegatron-11B').to(self.device, dtype=torch.float16)
-            self.tokenizer=transformers.AutoTokenizer.from_pretrained('emilyalsentzer/BioMegatron-11B')
         
         if self.model_name=="mistralai/Mixtral-8x7B-v0.1": #Outperforms Llama 2 70B on USMLE questions (see paper) 
             self.device = 'cuda' if torch.cuda.is_available() and use_GPU else 'cpu' # Check for GPU
@@ -49,16 +44,11 @@ class llm_model:
             self.model=transformers.AutoModelForCausalLM.from_pretrained('xyla/Clinical-T5-Large').to(self.device, dtype=torch.float16)
             self.tokenizer=transformers.AutoTokenizer.from_pretrained('xyla/Clinical-T5-Large')
         
-        if  self.model_name=="epfl-llm/meditron-70b":
+        if  self.model_name=="epfl-llm/meditron-7b":
             self.device = 'cuda' if torch.cuda.is_available() and use_GPU else 'cpu'
-            self.model=transformers.AutoModelForCausalLM.from_pretrained('epfl-llm/meditron-70b').to(self.device, dtype=torch.float16)
-            self.tokenizer=transformers.AutoTokenizer.from_pretrained('epfl-llm/meditron-70b')
-
-        if self.model_name=="epfl-llm/meditron-70b-finetuned-usmed":
-            self.device = 'cuda' if torch.cuda.is_available() and use_GPU else 'cpu'
-            self.model=transformers.AutoModelForCausalLM.from_pretrained('epfl-llm/meditron-70b-finetuned-usmed').to(self.device, dtype=torch.float16)
-            self.tokenizer=transformers.AutoTokenizer.from_pretrained('epfl-llm/meditron-70b-finetuned-usmed')
-
+            self.model=transformers.AutoModelForCausalLM.from_pretrained('epfl-llm/meditron-7b').to(self.device, dtype=torch.float16)
+            self.tokenizer=transformers.AutoTokenizer.from_pretrained('epfl-llm/meditron-7b')
+ 
             
     def query_model(self, prompt):
         if "gpt" in self.model_name.lower():
@@ -76,13 +66,9 @@ class llm_model:
             ).to(self.device) 
 
             with torch.no_grad():
-            
-
-        
-            ).to(self.device)
-            with torch.no_grad():
                 response = self.model.generate(inputs=batch["input_ids"], max_new_tokens=400, do_sample=True, top_k=50)
                 response = self.tokenizer.decode(response[0])
+                response = response.split(prompt)[1]                
             
         response = response.replace(r'"', "")
         
