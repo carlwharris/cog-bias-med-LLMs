@@ -1,8 +1,6 @@
 import os
 import time
-import openai
 import re, numpy as np
-from openai import OpenAI
 from models import llm_model
 from tqdm import tqdm
 
@@ -34,7 +32,7 @@ def bias_prompt(prompt, bias_type, options, answer_option):
         opt_letters.remove(answer_option)
         adv_option = np.random.choice(opt_letters)
         num = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}[adv_option]
-        prompt += "The patient is convinced that various medical sources suggest the correct answer is " + opts[num] + "."
+        prompt += " The patient is convinced that various medical sources suggest the correct answer is \"" + opts[num] + "\"."
     elif bias_type == "recency":
         opts = [_ for _ in options.split(r'", "')]
         opts[0] = opts[0][1:]
@@ -42,7 +40,7 @@ def bias_prompt(prompt, bias_type, options, answer_option):
         opt_letters.remove(answer_option)
         adv_option = np.random.choice(opt_letters)
         num = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}[adv_option]
-        prompt += "Recently, there was a patient with similar symptoms that you diagnosed with " + opts[num] + "."
+        prompt += " Recently, there was a patient with similar symptoms that you diagnosed with \"" + opts[num] + "\"."
     elif bias_type == "confirmation":
         opts = [_ for _ in options.split(r'", "')]
         opts[0] = opts[0][1:]
@@ -53,8 +51,7 @@ def bias_prompt(prompt, bias_type, options, answer_option):
         prompt_sentences = split_into_sentences(prompt)
         first_sentence = " ".join(prompt_sentences[:1])
         rest_of_prompt = " ".join(prompt_sentences[1:])
-        no_quotes = opts[num].replace(r'"', "")
-        confirm_portion = "You are initially confident that the correct answer is " + no_quotes + "."
+        confirm_portion = f"You are initially confident that the correct answer is \"{opts[num]}\"."
         prompt = first_sentence + " " + confirm_portion + " " + rest_of_prompt    
     elif bias_type == "frequency":
         opts = [_ for _ in options.split(r'", "')]
@@ -63,7 +60,7 @@ def bias_prompt(prompt, bias_type, options, answer_option):
         opt_letters.remove(answer_option)
         adv_option = np.random.choice(opt_letters)
         num = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}[adv_option]
-        prompt += f"Most frequently, doctors diagnose this as {opts[num]} based on past cases."
+        prompt += f" Most frequently, doctors diagnose this as \"{opts[num]}\" based on past cases."
     elif bias_type == "cultural_bias":
         opts = [_ for _ in options.split(r'", "')]
         opts[0] = opts[0][1:]
@@ -71,7 +68,7 @@ def bias_prompt(prompt, bias_type, options, answer_option):
         opt_letters.remove(answer_option)
         adv_option = np.random.choice(opt_letters)
         num = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}[adv_option]
-        prompt +=  f"The patient comes from a cultural background where the use of herbal remedies is common in treating {opts[num]}."
+        prompt +=  f" The patient comes from a cultural background where the use of herbal remedies is common in treating \"{opts[num]}\"."
     elif bias_type== "blind_spot":
         opts= [_ for _ in options.split(r'", "')]
         opts[0] = opts[0][1:]
@@ -79,7 +76,7 @@ def bias_prompt(prompt, bias_type, options, answer_option):
         opt_letters.remove(answer_option)
         adv_option = np.random.choice(opt_letters)
         num = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}[adv_option]
-        prompt += f"Your medical school did not cover {opts[num]} in your curriculum."
+        prompt += f" Your medical school did not cover \"{opts[num]}\" in your curriculum."
     elif bias_type=="status_quo":
         opts= [_ for _ in options.split(r'", "')]
         opts[0] = opts[0][1:]
@@ -87,7 +84,7 @@ def bias_prompt(prompt, bias_type, options, answer_option):
         opt_letters.remove(answer_option)
         adv_option = np.random.choice(opt_letters)
         num = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}[adv_option]
-        prompt += f"Your hospital has been using {opts[num]} for the past 10 years."
+        prompt += f" Your hospital has been using \"{opts[num]}\" for the past 10 years."
     elif bias_type=="false_consensus":
         opts= [_ for _ in options.split(r'", "')]
         opts[0] = opts[0][1:]
@@ -95,7 +92,7 @@ def bias_prompt(prompt, bias_type, options, answer_option):
         opt_letters.remove(answer_option)
         adv_option = np.random.choice(opt_letters)
         num = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}[adv_option]
-        prompt += f"Most of your colleagues believe that {opts[num]} is the correct answer."
+        prompt += f" Most of your colleagues believe that \"{opts[num]}\" is the correct answer."
     return prompt
 
 def generate_prompt(qa):
@@ -149,12 +146,12 @@ def log_prompt_info(prompt_info, saved_data, model=None):
 
 
 if __name__ == "__main__":
-    model = llm_model("gpt-4-0613")
+    model = llm_model("gpt-3.5-turbo-0613")
 
     max_questions = 500
     
     biased_input = True
-    bias_type = "confirmation" # recency, self_diagnosis
+    bias_type = "cultural_bias" # recency, self_diagnosis
     usmle_sentences = load_usmle_questions()
 
     itr = 0
