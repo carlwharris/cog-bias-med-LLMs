@@ -4,6 +4,7 @@ import openai
 import re, numpy as np
 from openai import OpenAI
 from models import llm_model
+from tqdm import tqdm
 
 
 def load_usmle_questions():
@@ -50,13 +51,12 @@ def bias_prompt(prompt, bias_type, options, answer_option):
         adv_option = np.random.choice(opt_letters)
         num = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}[adv_option]
         prompt_sentences = split_into_sentences(prompt)
-        first_two_sentences = " ".join(prompt_sentences[:2])
-        rest_of_prompt = " ".join(prompt_sentences[2:])
+        first_sentence = " ".join(prompt_sentences[:1])
+        rest_of_prompt = " ".join(prompt_sentences[1:])
         confirm_portion = "You are initially confident that the correct answer is " + opts[num] + "."
-        prompt = first_two_sentences + " " + confirm_portion + " " + rest_of_prompt
+        prompt = first_sentence + " " + confirm_portion + " " + rest_of_prompt
     
     return prompt
-
 
 def generate_prompt(qa):
     context = qa.split(r'{"question": "')[1].split(r'", "answer":')[0]
@@ -72,28 +72,31 @@ def generate_prompt(qa):
 
 def print_prompt_info(prompt_info):
     prompt, context, options, answer, answer_option = prompt_info
-    is_correct = str(completion.choices[0].message.content[0] == answer_option)
+    is_correct = str(response[0] == answer_option)
     print("~" * 100)
     print(prompt)
     print(context)
     print(options)
     print(answer)
     print(answer_option)
-    print(completion.choices[0].message.content)
+    print(response)
     print(is_correct)
 
 def log_prompt_info(prompt_info, saved_data, model=None):
     prompt, context, options, answer, answer_option = prompt_info
-    is_correct = str(completion.choices[0].message.content[0] == answer_option)
+    is_correct = str(response[0] == answer_option)
     saved_data += "~" * 100 + "\n"
     saved_data += prompt + "\n"
     saved_data += context + "\n"
     saved_data += options + "\n"
     saved_data += answer + "\n"
     saved_data += answer_option + "\n"
-    saved_data += completion.choices[0].message.content + "\n"
+    saved_data += response + "\n"
     saved_data += is_correct + "\n"
-    file_save_title = "bias_output_{}".format(bias_type if biased_input else "")
+
+    file_save_title = "bias_output"
+    if biased_input:
+        file_save_title += f"_{bias_type}"
 
     if model is not None:
         file_save_title += f"_{model}"
@@ -106,7 +109,7 @@ def log_prompt_info(prompt_info, saved_data, model=None):
 
 
 if __name__ == "__main__":
-    model = llm_model("gpt-4")
+    model = llm_model("gpt-3.5-turbo-0613")
 
     max_questions = 500
     
@@ -116,15 +119,17 @@ if __name__ == "__main__":
 
     itr = 0
     saved_data = str()
-    for qa in usmle_sentences:
+    for qa in tqdm(usmle_sentences, total=max_questions):
         itr += 1
         if itr > max_questions: break
         try:
             prompt, prompt_data = generate_prompt(qa)
-            completion = model.query_model(prompt)
+            response = model.query_model(prompt)
             print_prompt_info(prompt_data)
-            saved_data = log_prompt_info(prompt_data, saved_data)
-            time.sleep(1) # avoid dos
+            saved_data = log_prompt_info(prompt_data, saved_data, model.model_name)
+
+            if "gpt" in model.model_name:
+                time.sleep(5) # avoid dos
 
         except Exception as e:
             time.sleep(5)
