@@ -1,6 +1,11 @@
 from openai import OpenAI
 import os
 
+#Add a for loop to iterate throguh all models
+#Add a function to load all models
+#Add a function to query all models
+
+
 class llm_model:
     def __init__(self, model_name):
         self.model_name = model_name
@@ -72,6 +77,12 @@ class llm_model:
                 add_special_tokens=False
             ).to(self.device) 
 
+        if 'ClinicalBERT' in self.model_name:
+            batch = self.tokenizer(
+                prompt,
+                return_tensors="pt",
+                add_special_tokens=False
+            ).to(self.device)
             with torch.no_grad():
                 response = self.model.generate(inputs=batch["input_ids"], max_new_tokens=400, do_sample=True, top_k=50)
                 response = self.tokenizer.decode(response[0])
