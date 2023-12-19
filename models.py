@@ -9,7 +9,7 @@ class llm_model:
             self.api_key = os.environ.get('OPENAI_API_KEY')
             self.client = OpenAI(api_key=self.api_key)
 
-        if 'llama' in self.model_name.lower():
+        if 'gpt' not in self.model_name.lower():
             import transformers
             import torch
 
