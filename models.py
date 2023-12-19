@@ -40,6 +40,23 @@ class llm_model:
             self.model=transformers.AutoModelForCausalLM.from_pretrained('mistralai/Mixtral-8x7B-v0.1').to(self.device, dtype=torch.float16)  #call model from huggingface
             self.tokenizer=transformers.AutoTokenizer.from_pretrained('mistralai/Mixtral-8x7B-v0.1') #call tokenizer from huggingface
 
+        if self.model_name=="xyla/Clinical-T5-Large":
+            self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
+            self.model=transformers.AutoModelForCausalLM.from_pretrained('xyla/Clinical-T5-Large').to(self.device, dtype=torch.float16)
+            self.tokenizer=transformers.AutoTokenizer.from_pretrained('xyla/Clinical-T5-Large')
+        
+        if  self.model_name=="epfl-llm/meditron-70b":
+            self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
+            self.model=transformers.AutoModelForCausalLM.from_pretrained('epfl-llm/meditron-70b').to(self.device, dtype=torch.float16)
+            self.tokenizer=transformers.AutoTokenizer.from_pretrained('epfl-llm/meditron-70b')
+
+        if self.model_name=="epfl-llm/meditron-70b-finetuned-usmed":
+            self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
+            self.model=transformers.AutoModelForCausalLM.from_pretrained('epfl-llm/meditron-70b-finetuned-usmed').to(self.device, dtype=torch.float16)
+            self.tokenizer=transformers.AutoTokenizer.from_pretrained('epfl-llm/meditron-70b-finetuned-usmed')
+
+
+            
     def query_model(self, prompt):
         if "gpt" in self.model_name:
             completion = self.client.chat.completions.create(
