@@ -20,7 +20,6 @@ class llm_model:
 
         if self.model_name == 'PMC_LLAMA_7B':
             self.device = 'cuda' if torch.cuda.is_available() and use_GPU else 'cpu'  # Check for GPU
-
             self.model = transformers.LlamaForCausalLM.from_pretrained('chaoyi-wu/PMC_LLAMA_7B').to(self.device, dtype=torch.float16)
             self.tokenizer = transformers.LlamaTokenizer.from_pretrained('chaoyi-wu/PMC_LLAMA_7B')
 
@@ -60,7 +59,6 @@ class llm_model:
             self.model=transformers.AutoModelForCausalLM.from_pretrained('epfl-llm/meditron-70b-finetuned-usmed').to(self.device, dtype=torch.float16)
             self.tokenizer=transformers.AutoTokenizer.from_pretrained('epfl-llm/meditron-70b-finetuned-usmed')
 
-
             
     def query_model(self, prompt):
         if "gpt" in self.model_name.lower():
@@ -77,11 +75,10 @@ class llm_model:
                 add_special_tokens=False
             ).to(self.device) 
 
-        if 'ClinicalBERT' in self.model_name:
-            batch = self.tokenizer(
-                prompt,
-                return_tensors="pt",
-                add_special_tokens=False
+            with torch.no_grad():
+            
+
+        
             ).to(self.device)
             with torch.no_grad():
                 response = self.model.generate(inputs=batch["input_ids"], max_new_tokens=400, do_sample=True, top_k=50)
