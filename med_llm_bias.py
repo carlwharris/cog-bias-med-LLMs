@@ -54,7 +54,23 @@ def bias_prompt(prompt, bias_type, options, answer_option):
         first_sentence = " ".join(prompt_sentences[:1])
         rest_of_prompt = " ".join(prompt_sentences[1:])
         confirm_portion = "You are initially confident that the correct answer is " + opts[num] + "."
-        prompt = first_sentence + " " + confirm_portion + " " + rest_of_prompt
+        prompt = first_sentence + " " + confirm_portion + " " + rest_of_prompt    
+    elif bias_type == "frequency":
+        opts = [_ for _ in options.split(r'", "')]
+        opts[0] = opts[0][1:]
+        opt_letters = [op[:1] for op in opts]
+        opt_letters.remove(answer_option)
+        adv_option = np.random.choice(opt_letters)
+        num = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}[adv_option]
+        prompt += f"Most frequently, doctors diagnose this as {opts[num]} based on past cases."
+    elif bias_type == "cultural_bias":
+        opts = [_ for _ in options.split(r'", "')]
+        opts[0] = opts[0][1:]
+        opt_letters = [op[:1] for op in opts]
+        opt_letters.remove(answer_option)
+        adv_option = np.random.choice(opt_letters)
+        num = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}[adv_option]
+        prompt +=  f"The patient comes from a cultural background where the use of herbal remedies is common in treating {opts[num]}."
     
     return prompt
 
