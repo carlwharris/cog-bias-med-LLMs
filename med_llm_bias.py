@@ -53,7 +53,8 @@ def bias_prompt(prompt, bias_type, options, answer_option):
         prompt_sentences = split_into_sentences(prompt)
         first_sentence = " ".join(prompt_sentences[:1])
         rest_of_prompt = " ".join(prompt_sentences[1:])
-        confirm_portion = "You are initially confident that the correct answer is " + opts[num] + "."
+        no_quotes = opts[num].replace(r'"', "")
+        confirm_portion = "You are initially confident that the correct answer is " + no_quotes + "."
         prompt = first_sentence + " " + confirm_portion + " " + rest_of_prompt
     
     return prompt
@@ -109,7 +110,7 @@ def log_prompt_info(prompt_info, saved_data, model=None):
 
 
 if __name__ == "__main__":
-    model = llm_model("gpt-3.5-turbo-0613")
+    model = llm_model("gpt-4-0613")
 
     max_questions = 500
     
@@ -132,5 +133,5 @@ if __name__ == "__main__":
                 time.sleep(5) # avoid dos
 
         except Exception as e:
-            time.sleep(5)
+            time.sleep(30)
             print(e, "ERROR")
