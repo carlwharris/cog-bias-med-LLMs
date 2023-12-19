@@ -11,7 +11,7 @@ No bias: 0.51
 Recency bias: 0.36
 
 #### gpt-4-0613
-No bias: 
+No bias: 0.736
 
 Recency bias: 0.724
 
