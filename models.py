@@ -5,11 +5,11 @@ class llm_model:
     def __init__(self, model_name):
         self.model_name = model_name
 
-        if "gpt" in self.model_name:
+        if "gpt" in self.model_name.lower():
             self.api_key = os.environ.get('OPENAI_API_KEY')
             self.client = OpenAI(api_key=self.api_key)
 
-        if 'LLAMA' in self.model_name:
+        if 'llama' in self.model_name.lower():
             import transformers
             import torch
 
@@ -58,14 +58,14 @@ class llm_model:
 
             
     def query_model(self, prompt):
-        if "gpt" in self.model_name:
+        if "gpt" in self.model_name.lower():
             completion = self.client.chat.completions.create(
                 model=self.model_name,
                 max_tokens=2048,
                 messages=[{"role": "system", "content": prompt}])
             response = completion.choices[0].message.content
         
-        if 'LLAMA' in self.model_name:
+        if 'llama' in self.model_name.lower():
             batch = self.tokenizer(
                 prompt,
                 return_tensors="pt",
