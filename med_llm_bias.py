@@ -3,6 +3,7 @@ import time
 import openai
 import re, numpy as np
 from openai import OpenAI
+from models import llm_model
 
 
 def load_usmle_questions():
@@ -81,7 +82,7 @@ def print_prompt_info(prompt_info):
     print(completion.choices[0].message.content)
     print(is_correct)
 
-def log_prompt_info(prompt_info, saved_data):
+def log_prompt_info(prompt_info, saved_data, model=None):
     prompt, context, options, answer, answer_option = prompt_info
     is_correct = str(completion.choices[0].message.content[0] == answer_option)
     saved_data += "~" * 100 + "\n"
@@ -92,17 +93,23 @@ def log_prompt_info(prompt_info, saved_data):
     saved_data += answer_option + "\n"
     saved_data += completion.choices[0].message.content + "\n"
     saved_data += is_correct + "\n"
-    file_save_title = "bias_output_{}.txt".format(bias_type if biased_input else "")
+    file_save_title = "bias_output_{}".format(bias_type if biased_input else "")
+
+    if model is not None:
+        file_save_title += f"_{model}"
+
+    file_save_title += ".txt"
+
     with open(file_save_title, "w", encoding='utf8', errors='ignore') as f:
         f.write(saved_data)
     return saved_data
 
 
 if __name__ == "__main__":
-    max_questions = 5
-    api_key = os.environ.get('OPENAI_API_KEY')
-    client = OpenAI(api_key=api_key)
+    model = llm_model("gpt-4")
 
+    max_questions = 500
+    
     biased_input = True
     bias_type = "confirmation" # recency, self_diagnosis
     usmle_sentences = load_usmle_questions()
@@ -114,13 +121,10 @@ if __name__ == "__main__":
         if itr > max_questions: break
         try:
             prompt, prompt_data = generate_prompt(qa)
-            completion = client.chat.completions.create(
-                model="gpt-3.5-turbo",
-                max_tokens=2048,
-                messages=[{"role": "system", "content": prompt}])
+            completion = model.query_model(prompt)
             print_prompt_info(prompt_data)
             saved_data = log_prompt_info(prompt_data, saved_data)
-            time.sleep(5) # avoid dos
+            time.sleep(1) # avoid dos
 
         except Exception as e:
             time.sleep(5)
