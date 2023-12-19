@@ -5,6 +5,8 @@ def create_adversarial_prompts(prompt):
     # List of adversarial attacks
     attacks = ["self_diagnosis", "recency", "confirmation", "frequency", "cultural_bias", "blind_spot", "status_quo", "false_consensus"]
 
+    #confirmation bias is really good one
+
 
     # Dictionary to store adversarial prompts for each attack
     adversarial_prompts = {}
