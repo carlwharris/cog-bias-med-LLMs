@@ -168,6 +168,18 @@ if __name__ == "__main__":
             if "gpt" in model.model_name:
                 time.sleep(5) # avoid dos
 
+            if "LLAMA" in model.model_name:
+                time.sleep(10)
+            
+            if "ClinicalBERT" in model.model_name:
+                time.sleep(10)
+            
+            if "BioMegatron" in model.model_name:
+                time.sleep(10)
+            
+            if "mistralai" in model.model_name:
+                time.sleep(10)
+            
         except Exception as e:
-            time.sleep(30)
+            time.sleep(30) # avoid dos
             print(e, "ERROR")
