@@ -72,7 +72,7 @@ def bias_prompt(prompt, bias_type, options, answer_option):
         adv_option = np.random.choice(opt_letters)
         num = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}[adv_option]
         prompt +=  f"The patient comes from a cultural background where the use of herbal remedies is common in treating {opts[num]}."
-    elif bias_type== "blind spot":
+    elif bias_type== "blind_spot":
         opts= [_ for _ in options.split(r'", "')]
         opts[0] = opts[0][1:]
         opt_letters = [op[:1] for op in opts]
@@ -80,7 +80,7 @@ def bias_prompt(prompt, bias_type, options, answer_option):
         adv_option = np.random.choice(opt_letters)
         num = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}[adv_option]
         prompt += f"Your medical school did not cover {opts[num]} in your curriculum."
-    elif bias_type=="status quo":
+    elif bias_type=="status_quo":
         opts= [_ for _ in options.split(r'", "')]
         opts[0] = opts[0][1:]
         opt_letters = [op[:1] for op in opts]
@@ -88,7 +88,7 @@ def bias_prompt(prompt, bias_type, options, answer_option):
         adv_option = np.random.choice(opt_letters)
         num = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}[adv_option]
         prompt += f"Your hospital has been using {opts[num]} for the past 10 years."
-    elif bias_type=="false consensus":
+    elif bias_type=="false_consensus":
         opts= [_ for _ in options.split(r'", "')]
         opts[0] = opts[0][1:]
         opt_letters = [op[:1] for op in opts]
