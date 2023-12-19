@@ -18,6 +18,12 @@ def lines_to_sentences(line_stream):
         if len(sentence) == 0: continue
         yield sentence
 
+def split_into_sentences(text):
+    # Regular expression for splitting sentences
+    sentence_endings = r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?|!)\s'
+    sentences = re.split(sentence_endings, text)
+    return [sentence.strip() for sentence in sentences if sentence.strip()]
+
 def bias_prompt(prompt, bias_type, options, answer_option):
     if bias_type == "self_diagnosis":
         opts = [_ for _ in options.split(r'", "')]
@@ -35,6 +41,20 @@ def bias_prompt(prompt, bias_type, options, answer_option):
         adv_option = np.random.choice(opt_letters)
         num = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}[adv_option]
         prompt += "Recently, there was a patient with similar symptoms that you diagnosed with " + opts[num] + "."
+    elif bias_type == "confirmation":
+        opts = [_ for _ in options.split(r'", "')]
+        opts[0] = opts[0][1:]
+        opt_letters = [op[:1] for op in opts]
+        opt_letters.remove(answer_option)
+        adv_option = np.random.choice(opt_letters)
+        num = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}[adv_option]
+        prompt_sentences = split_into_sentences(prompt)
+        first_two_sentences = " ".join(prompt_sentences[:2])
+        rest_of_prompt = " ".join(prompt_sentences[2:])
+        confirm_portion = "You are initially confident that the correct answer is " + opts[num] + "."
+        prompt = first_two_sentences + " " + confirm_portion + " " + rest_of_prompt
+    
+    return prompt
 
 
 def generate_prompt(qa):
@@ -83,8 +103,8 @@ if __name__ == "__main__":
     api_key = os.environ.get('OPENAI_API_KEY')
     client = OpenAI(api_key=api_key)
 
-    biased_input = False
-    bias_type = "recency" # recency, self_diagnosis
+    biased_input = True
+    bias_type = "confirmation" # recency, self_diagnosis
     usmle_sentences = load_usmle_questions()
 
     itr = 0
@@ -100,7 +120,7 @@ if __name__ == "__main__":
                 messages=[{"role": "system", "content": prompt}])
             print_prompt_info(prompt_data)
             saved_data = log_prompt_info(prompt_data, saved_data)
-            time.sleep(10) # avoid dos
+            time.sleep(5) # avoid dos
 
         except Exception as e:
             time.sleep(5)
