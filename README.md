@@ -10,6 +10,8 @@ No bias: 0.51
 
 Availability bias: 0.359
 
+Confirmation bias: 0.112
+
 #### gpt-4-0613
 No bias: 0.75
 
