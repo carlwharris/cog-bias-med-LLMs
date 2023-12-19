@@ -24,7 +24,21 @@ class llm_model:
 
             self.model = transformers.LlamaForCausalLM.from_pretrained('axiong/PMC_LLaMA_13B').to(self.device, dtype=torch.float16)
             self.tokenizer = transformers.LlamaTokenizer.from_pretrained('axiong/PMC_LLaMA_13B')
-            
+        
+        if self.model_name== 'ClinicalBERT':
+            self.device = 'cuda' if torch.cuda.is_available() else 'cpu'  # Check for GPU
+            self.model=transformers.AutoModelForCausalLM.from_pretrained('emilyalsentzer/Bio_ClinicalBERT').to(self.device, dtype=torch.float16)
+            self.tokenizer=transformers.AutoTokenizer.from_pretrained('emilyalsentzer/Bio_ClinicalBERT')
+        
+        if self.model_name=='BioMegatron-11B':
+            self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
+            self.model=transformers.AutoModelForCausalLM.from_pretrained('emilyalsentzer/BioMegatron-11B').to(self.device, dtype=torch.float16)
+            self.tokenizer=transformers.AutoTokenizer.from_pretrained('emilyalsentzer/BioMegatron-11B')
+        
+        if self.model_name=="mistralai/Mixtral-8x7B-v0.1": #Outperforms Llama 2 70B on USMLE questions (see paper) 
+            self.device = 'cuda' if torch.cuda.is_available() else 'cpu' # Check for GPU
+            self.model=transformers.AutoModelForCausalLM.from_pretrained('mistralai/Mixtral-8x7B-v0.1').to(self.device, dtype=torch.float16)  #call model from huggingface
+            self.tokenizer=transformers.AutoTokenizer.from_pretrained('mistralai/Mixtral-8x7B-v0.1') #call tokenizer from huggingface
 
     def query_model(self, prompt):
         if "gpt" in self.model_name:
