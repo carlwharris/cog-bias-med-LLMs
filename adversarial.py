@@ -27,6 +27,8 @@ def create_adversarial_prompts(prompt):
 
 
 # Import necessary libraries
+
+
 import matplotlib.pyplot as plt
 
 # Define the attacks and their success rates
