@@ -147,12 +147,12 @@ def log_prompt_info(prompt_info, saved_data, model=None):
 
 if __name__ == "__main__":
     # Can't use GPU for large models because of memory constraints
-    model = llm_model("mistralai/Mixtral-8x7B-v0.1", use_GPU=False)
+    model = llm_model("gpt-3.5-turbo-0613", use_GPU=False)
 
     max_questions = 500
     
     biased_input = True
-    bias_type = "cultural_bias" # recency, self_diagnosis
+    bias_type = "frequency" # recency, self_diagnosis
     usmle_sentences = load_usmle_questions()
 
     itr = 0
@@ -167,8 +167,16 @@ if __name__ == "__main__":
             saved_data = log_prompt_info(prompt_data, saved_data, model.model_name)
 
             if "gpt" in model.model_name:
-                time.sleep(5) # avoid dos
+                time.sleep(1) # avoid dos
             
         except Exception as e:
-            time.sleep(30) # avoid dos
             print(e, "ERROR")
+
+            time.sleep(30) # avoid dos
+
+            # Try again
+            prompt, prompt_data = generate_prompt(qa)
+            response = model.query_model(prompt)
+            print_prompt_info(prompt_data)
+            saved_data = log_prompt_info(prompt_data, saved_data, model.model_name)
+            
