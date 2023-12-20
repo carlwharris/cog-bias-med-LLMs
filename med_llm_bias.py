@@ -145,38 +145,63 @@ def log_prompt_info(prompt_info, saved_data, model=None):
     return saved_data
 
 
-if __name__ == "__main__":
-    # Can't use GPU for large models because of memory constraints
-    model = llm_model("gpt-3.5-turbo-0613", use_GPU=False)
-
+def train_all_models():
     max_questions = 500
-    
-    biased_input = True
-    bias_type = "frequency" # recency, self_diagnosis
-    usmle_sentences = load_usmle_questions()
+    bias_types = ["cultural_bias", "recency", "self_diagnosis", "confirmation", "blind_spot", "status_quo", "false_consesus"] # Define all bias types
+    models = ["mistralai/Mixtral-8x7B-v0.1", "PMC_LLAMA_7B", "PMC_LLaMA_13B", "xyla/Clinical-T5-Large", "epfl-llm/meditron-7b", "BioClinicalBert"]  # Define all models
 
-    itr = 0
-    saved_data = str()
-    for qa in tqdm(usmle_sentences, total=max_questions):
-        itr += 1
-        if itr > max_questions: break
-        try:
-            prompt, prompt_data = generate_prompt(qa)
-            response = model.query_model(prompt)
-            print_prompt_info(prompt_data)
-            saved_data = log_prompt_info(prompt_data, saved_data, model.model_name)
+    for bias_type in bias_types:
+        for model_name in models:
+            model = llm_model(model_name, use_GPU=False)  # Initialize the model
 
-            if "gpt" in model.model_name:
-                time.sleep(1) # avoid dos
-            
-        except Exception as e:
-            print(e, "ERROR")
+            itr = 0
+            saved_data = str()
+            for qa in tqdm(usmle_sentences, total=max_questions):
+                itr += 1
+                if itr > max_questions: break
+                try:
+                    prompt, prompt_data = generate_prompt(qa)
+                    response = model.query_model(prompt)
+                    print_prompt_info(prompt_data)
+                    saved_data = log_prompt_info(prompt_data, saved_data, model.model_name)
 
-            time.sleep(30) # avoid dos
+                    if "gpt" in model.model_name:
+                        time.sleep(5)  # avoid dos
 
-            # Try again
-            prompt, prompt_data = generate_prompt(qa)
-            response = model.query_model(prompt)
-            print_prompt_info(prompt_data)
-            saved_data = log_prompt_info(prompt_data, saved_data, model.model_name)
-            
+                except Exception as e:
+                    time.sleep(30)  # avoid dos
+                    print(e, "ERROR")
+
+if __name__ == "__main__" :
+    call_train_all_models = False
+    if call_train_all_models==False:
+            # Can't use GPU for large models because of memory constraints
+        model = llm_model("mistralai/Mixtral-8x7B-v0.1", use_GPU=False)
+
+        max_questions = 500
+        
+        biased_input = True
+        bias_type = "cultural_bias" # recency, self_diagnosis
+        usmle_sentences = load_usmle_questions()
+
+        itr = 0
+        saved_data = str()
+        for qa in tqdm(usmle_sentences, total=max_questions):
+            itr += 1
+            if itr > max_questions: break
+            try:
+                prompt, prompt_data = generate_prompt(qa)
+                response = model.query_model(prompt)
+                print_prompt_info(prompt_data)
+                saved_data = log_prompt_info(prompt_data, saved_data, model.model_name)
+
+                if "gpt" in model.model_name:
+                    time.sleep(5) # avoid dos
+                
+            except Exception as e:
+                time.sleep(30) # avoid dos
+                print(e, "ERROR")
+
+    # Call the train_all_models function
+    if call_train_all_models==True:
+        train_all_models()

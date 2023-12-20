@@ -33,16 +33,16 @@ class llm_model:
             self.model = transformers.LlamaForCausalLM.from_pretrained('axiong/PMC_LLaMA_13B').to(self.device, dtype=dtype)
             self.tokenizer = transformers.LlamaTokenizer.from_pretrained('axiong/PMC_LLaMA_13B')
         
-        if self.model_name== 'ClinicalBERT':
-            self.model=transformers.AutoModelForCausalLM.from_pretrained('emilyalsentzer/Bio_ClinicalBERT').to(self.device, dtype=dtype)
+        if self.model_name== 'BioClinicalBERT':
+            self.model=transformers.AutoModelForCausalLM.from_pretrained('emilyalsentzer/Bio_ClinicalBERT').to(self.device, dtype=torch.float16)
             self.tokenizer=transformers.AutoTokenizer.from_pretrained('emilyalsentzer/Bio_ClinicalBERT')
         
         if self.model_name=='BioMegatron-11B':
-            self.model=transformers.AutoModelForCausalLM.from_pretrained('emilyalsentzer/BioMegatron-11B').to(self.device, dtype=dtype)
+            self.model=transformers.AutoModelForCausalLM.from_pretrained('emilyalsentzer/BioMegatron-11B').to(self.device, dtype=torch.float16)
             self.tokenizer=transformers.AutoTokenizer.from_pretrained('emilyalsentzer/BioMegatron-11B')
         
         if self.model_name=="Mixtral-8x7B-v0.1": #Outperforms Llama 2 70B on USMLE questions (see paper) 
-            self.model=transformers.AutoModelForCausalLM.from_pretrained('mistralai/Mixtral-8x7B-v0.1').to(self.device, dtype=dtype)  #call model from huggingface
+            self.model=transformers.AutoModelForCausalLM.from_pretrained('mistralai/Mixtral-8x7B-v0.1').to(self.device, dtype=torch.float16)  #call model from huggingface
             self.tokenizer=transformers.AutoTokenizer.from_pretrained('mistralai/Mixtral-8x7B-v0.1') #call tokenizer from huggingface
 
         if self.model_name=="Clinical-T5-Large":
@@ -50,12 +50,14 @@ class llm_model:
             self.tokenizer=transformers.AutoTokenizer.from_pretrained('xyla/Clinical-T5-Large')
         
         if  self.model_name=="meditron-70b":
-            self.model=transformers.AutoModelForCausalLM.from_pretrained('epfl-llm/meditron-70b').to(self.device, dtype=dtype)
+            self.model=transformers.AutoModelForCausalLM.from_pretrained('epfl-llm/meditron-70b').to(self.device, dtype=torch.float16)
             self.tokenizer=transformers.AutoTokenizer.from_pretrained('epfl-llm/meditron-70b')
 
         if self.model_name=="meditron-70b-finetuned-usmed":
-            self.model=transformers.AutoModelForCausalLM.from_pretrained('epfl-llm/meditron-70b-finetuned-usmed').to(self.device, dtype=dtype)
+            self.model=transformers.AutoModelForCausalLM.from_pretrained('epfl-llm/meditron-70b-finetuned-usmed').to(self.device, dtype=torch.float16)
             self.tokenizer=transformers.AutoTokenizer.from_pretrained('epfl-llm/meditron-70b-finetuned-usmed')
+
+
             
     def query_model(self, prompt):
         if "gpt" in self.model_name.lower():
@@ -77,7 +79,8 @@ class llm_model:
             with torch.no_grad():
                 response = self.model.generate(inputs=batch["input_ids"], max_new_tokens=400, do_sample=True, top_k=50)
                 response = self.tokenizer.decode(response[0])
-
+                response = response.split(prompt)[1]                
+            
         response = response.replace(r'"', "")
         
         return response
