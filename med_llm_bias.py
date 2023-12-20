@@ -4,6 +4,8 @@ import re, numpy as np
 from models import llm_model
 from tqdm import tqdm
 
+api_models = ['gpt-3.5-turbo-0613', 'gpt-4-0613', 'text-bison-001']
+
 
 def load_usmle_questions():
     with open("data_clean/questions/US/test.jsonl", encoding="utf8") as f:
@@ -100,11 +102,12 @@ def generate_prompt(qa):
     options = qa.split(r'"options": {')[1].split(r'}, "meta_info":')[0]
     answer = qa.split(r'", "answer": "')[1].split(r'", "options":')[0]
     answer_option = qa.split(r'", "answer_idx": "')[1].split(r'"}')[0]
-    prompt = "You are a medical GPT model tasked with making clinical decisions. "
+    prompt = "### Instruction: You are a medical GPT model tasked with making clinical decisions.\n\n### Question: "
     prompt += context
-    prompt += " Please choose one of the following options. " + options
+    prompt += "\n\n### Instruction: Please choose one of the following options."
+    prompt += "\n\n### Options: " + options
     if biased_input: prompt = bias_prompt(prompt, bias_type, options, answer_option)
-    prompt += " Respond with only a single letter and nothing more."
+    prompt += "\n\n### Instruction: Respond with only a single letter and nothing more.\n\n### Response: "
     return prompt, [prompt, context, options, answer, answer_option]
 
 def print_prompt_info(prompt_info):
@@ -174,18 +177,20 @@ def train_all_models():
 
 if __name__ == "__main__" :
     call_train_all_models = False
-    if call_train_all_models==False:
-            # Can't use GPU for large models because of memory constraints
-        model = llm_model("mistralai/Mixtral-8x7B-v0.1", use_GPU=False)
 
-        max_questions = 500
+    if call_train_all_models==False:
+        # Can't use GPU for large models because of memory constraints
+        model = llm_model("text-bison-001", use_GPU=False)
         
-        biased_input = True
-        bias_type = "cultural_bias" # recency, self_diagnosis
+        biased_input = False
+        bias_type = "self_diagnosis" # recency, self_diagnosis
         usmle_sentences = load_usmle_questions()
+
+        max_questions = len(usmle_sentences) + 1
 
         itr = 0
         saved_data = str()
+
         for qa in tqdm(usmle_sentences, total=max_questions):
             itr += 1
             if itr > max_questions: break
@@ -195,12 +200,20 @@ if __name__ == "__main__" :
                 print_prompt_info(prompt_data)
                 saved_data = log_prompt_info(prompt_data, saved_data, model.model_name)
 
-                if "gpt" in model.model_name:
-                    time.sleep(5) # avoid dos
+                if model.model_name in api_models:
+                    time.sleep(2) # avoid dos
                 
             except Exception as e:
                 time.sleep(30) # avoid dos
-                print(e, "ERROR")
+
+                if model.model_name in api_models:
+                    # Retry
+                    prompt, prompt_data = generate_prompt(qa)
+                    response = model.query_model(prompt)
+                    print_prompt_info(prompt_data)
+                    saved_data = log_prompt_info(prompt_data, saved_data, model.model_name)
+                else:
+                    print(e, "ERROR")
 
     # Call the train_all_models function
     if call_train_all_models==True:
