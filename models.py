@@ -101,12 +101,12 @@ class llm_model:
                 response = self.model.generate(inputs=batch["input_ids"], max_new_tokens=10, do_sample=True, top_k=50)
                 response = self.tokenizer.decode(response[0])
                 response = response.split(prompt)[1]                
-            
-        # Get the first apppearance of [A-E]
-        responses = re.findall(r'[A-E]', response)
+                
+            # Get the first apppearance of [A-E]
+            responses = re.findall(r'[A-E]', response)
 
-        if len(response) != 0:
-            response = responses[0]
-        
+            if len(response) != 0:
+                response = responses[0]
+            
         return response
     
