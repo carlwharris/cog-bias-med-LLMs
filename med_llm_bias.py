@@ -150,7 +150,7 @@ def log_prompt_info(prompt_info, saved_data, model=None):
 def train_all_models():
     max_questions = 500
     bias_types = ["cultural_bias", "recency", "self_diagnosis", "confirmation", "blind_spot", "status_quo", "false_consesus"] # Define all bias types
-    models = ["mistralai/Mixtral-8x7B-v0.1", "PMC_LLAMA_7B", "PMC_LLaMA_13B", "xyla/Clinical-T5-Large", "epfl-llm/meditron-7b", "BioClinicalBert"]  # Define all models
+    models = ["mistralai/Mixtral-8x7B-v0.1", "PMC_LLAMA_7B", "PMC_LLaMA_13B", "xyla/Clinical-T5-Large", "epfl-llm/meditron-70b", "BioClinicalBert",]  # Define all models
 
     for bias_type in bias_types:
         for model_name in models:
