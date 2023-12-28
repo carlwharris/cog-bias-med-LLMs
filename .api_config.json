@@ -1,0 +1,27 @@
+{
+    "OpenAI": {
+        "API_KEY": "sk-..."
+    },
+    "Google": {
+        "API_KEY": "AI..."
+    },
+    "Replicate": {
+        "API_KEY": "r8_..."
+    },
+    "pmc-llama-13b": {
+        "API_URL": "https://...huggingface.cloud",
+        "API_KEY": "hf_..."
+    },
+    "meditron-7b-chat": {
+        "API_URL": "https://...huggingface.cloud",
+        "API_KEY": "hf_..."
+    },
+    "meditron-7b": {
+        "API_URL": "https://...huggingface.cloud",
+        "API_KEY": "hf_..."
+    },
+    "meditron-70b": {
+        "API_URL": "https://...huggingface.cloud",
+        "API_KEY": "hf_..."
+    }
+}
