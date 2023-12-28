@@ -9,8 +9,9 @@ import replicate
 openai_models = ['gpt-3.5-turbo-0613', 'gpt-4-0613']
 google_models = ['text-bison-001']
 replicate_models = ['llama-2-70b-chat', 'mixtral-8x7b-instruct-v0.1']
+# replicate_models = ['llama-2-70b-chat']
 hf_models = ['pmc-llama-13b', 'medalpaca-13b', 'meditron-7b', \
-             'meditron-7b-chat', 'meditron-70b']
+             'meditron-7b-chat', 'meditron-70b', 'mixtral-8x7b-instruct-v0.1']
 
 with open("api_config.json", "r") as jsonfile:
     api_config = json.load(jsonfile)
@@ -49,13 +50,14 @@ class llm_model:
         
         if self.model_name == 'mixtral-8x7b-instruct-v0.1':
             response = self._query_replicate(prompt, max_new_tokens=40)
+            # response = self._query_hf(prompt, max_new_tokens=40)
 
         # HUGGINGFACE MODELS            
         if self.model_name == 'pmc-llama-13b':
             response = self._query_hf(prompt, max_new_tokens=40)
 
         if self.model_name == "medalpaca-13b":
-            response = self._query_hf(prompt, max_new_tokens=400)
+            response = self._query_hf(prompt, max_new_tokens=40)
         
         if self.model_name == "meditron-7b-chat":
             response = self._query_hf(prompt, max_new_tokens=40)
@@ -65,6 +67,14 @@ class llm_model:
 
         if self.model_name == 'meditron-70b':
             response = self._query_hf(prompt, max_new_tokens=40)
+        
+        if len(response) == 0:
+            response = "NR"
+            return response
+        
+        # If response starts with a space, remove it
+        if response[0] == ' ':
+            response = response[1:]
         
         return response
     
@@ -85,7 +95,7 @@ class llm_model:
 
         if response is None:
             response = "NR"
-            return response
+        return response
     
     def _query_replicate(self, prompt, max_new_tokens=40):
         if self.model_name == 'llama-2-70b-chat':
@@ -96,9 +106,6 @@ class llm_model:
         output = replicate.run(url, input={"prompt": prompt, "max_new_tokens": max_new_tokens})
         response = ''.join(output)
         
-        # If response starts with a space, remove it
-        if response[0] == ' ':
-            response = response[1:]
         return response
 
     def _query_hf(self, prompt, max_new_tokens=400):
@@ -115,5 +122,9 @@ class llm_model:
                 "do_sample": True,
             }
         })
-
-        return output[0]['generated_text']
+        try:
+            return output[0]['generated_text']
+        except:
+            # Print the error message
+            print(output)
+            return "NR"
