@@ -2,7 +2,7 @@ import re
 import os
 import pandas as pd
 
-model = "gpt-4-0613"
+model = "mixtral-8x7b-instruct-v0.1"
 max_q = 5000
 step_restriction = None #'step2&3' # None, 'step1', 'step2&3'
 

@@ -4,7 +4,7 @@ import re
 f_name = "ae_bias_output_confirmation_llama-2-70b-chat.txt"
 f_name = "results/pmc-llama-13b/bias_output_pmc-llama-13b.txt"
 # f_name = "bias_output_mixtral-8x7b-instruct-v0.1.txt"
-f_name = "bias_output_gpt-4-0613.txt"
+f_name = "ae_bias_output_meditron-70b.txt"
 # f_name = "bias_output_confirmation-mitigated_pmc-llama-13b.txt"
 
 with open(f_name, "r", encoding='utf8', errors='ignore') as f:
