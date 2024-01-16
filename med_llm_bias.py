@@ -7,12 +7,30 @@ from models import llm_model
 from tqdm import tqdm
 
 def load_usmle_questions(question_set='test'):
-    if question_set in ['train', 'val', 'test']:
+    """
+    Loads USMLE questions from a specified JSONL file.
+
+    This function reads USMLE questions from a JSONL (JSON Lines) file corresponding to the provided 
+    `question_set` parameter. The function supports loading different sets of questions, such as training, 
+    development, test, or a complete question bank.
+
+    Args:
+        question_set (str, optional): Specifies the set of questions to load. Accepted values are 'train', 
+                                      'dev', 'test', 'all', and 'US_qbank'. Default value is 'test'.
+
+    Returns:
+        list: A list of dictionaries, where each dictionary represents a single USMLE question.
+
+    Raises:
+        ValueError: If the `question_set` argument is not one of the specified options ('train', 'dev', 'test', 
+                    'all', 'US_qbank').
+    """
+    if question_set in ['train', 'dev', 'test']:
         f_path = f"data_clean/questions/US/{question_set}.jsonl"
     elif question_set in ['all', 'US_qbank']:
         f_path = f"data_clean/questions/US/US_qbank.jsonl"
     else:
-        raise ValueError(f"Invalid question set: {question_set}. Options are: 'train', 'val', 'test', 'all'")
+        raise ValueError(f"Invalid question set: {question_set}. Options are: 'train', 'dev', 'test', 'all'")
 
     with open(f_path, encoding="utf8") as f:
         data = [json.loads(line) for line in f]
@@ -37,13 +55,30 @@ def split_into_sentences(text):
 class USMLEQuestionProcessor:
     def __init__(self, model_name, bias_type, mitigation_strategy=None):
         """
-        Initialize the MedLLMBias class.
+        Initializes an instance of the USMLEQuestionProcessor class.
+
+        This constructor sets up an object to process United States Medical Licensing Examination (USMLE) questions 
+        with specified bias and mitigation strategies. It loads training sentences from the USMLE dataset, prepares 
+        a file name for logging outputs based on the model name, bias type, and mitigation strategy, and initializes 
+        various attributes used in processing questions.
 
         Args:
-            model_name (str): The name of the model.
-            bias_type (str): The type of bias. Options include: None, "self_diagnosis", "recency", "confirmation", "frequency", "cultural_bias",  "status_quo", "false_consensus".
-            n_shots (int, optional): The number of shots. Defaults to 0.
-            mitigate_bias (bool, optional): Whether to mitigate bias. Defaults to False.
+            model_name (str): The name of the language model to be used for processing questions.
+            bias_type (str): The type of bias to be applied to the questions. Options include: None, "self_diagnosis", 
+                            "recency", "confirmation", "frequency", "cultural", "status_quo", "false_consensus".
+            mitigation_strategy (str, optional): The strategy to mitigate bias in the questions. Options include: 
+                                                None, "education", "one-shot", "few-shot". Default is None.
+
+        Attributes:
+            model_name (str): Stores the name of the language model.
+            bias_type (str): Stores the type of bias.
+            mitigation_strategy (str): Stores the bias mitigation strategy.
+            train_sentences (list): A list of training sentences loaded from the USMLE dataset.
+            saved_data (str): A string to accumulate data to be logged.
+            f_name (str): The file name to be used for logging outputs.
+
+        Raises:
+            ValueError: If an invalid `bias_type` or `mitigation_strategy` is provided.
         """
         self.model_name = model_name
         self.bias_type = bias_type
@@ -65,6 +100,28 @@ class USMLEQuestionProcessor:
 
 
     def generate_full_prompt(self, qa):
+        """
+        Generates a full prompt for the language model, including instructions, bias mitigation strategies (if any),
+        and the USMLE question with added bias.
+
+        This method constructs a detailed prompt that includes instructions tailored to the specific type of bias 
+        and mitigation strategy set for the class instance. It also incorporates an example question with bias (for 
+        one-shot or few-shot learning scenarios, if applicable) and the target USMLE question with added bias.
+
+        Args:
+            qa (dict): A dictionary representing a single USMLE question. It must contain keys 'question', 'options', 
+                    'answer', and 'answer_idx'.
+
+        Returns:
+            tuple: A tuple containing two elements:
+                1. A string representing the full prompt for the language model. This prompt includes bias mitigation 
+                    instructions, example question(s) for one-shot or few-shot learning (if applicable), and the target 
+                    question with added bias.
+                2. A dictionary representing the modified USMLE question with added bias (obtained from the `add_bias` method).
+
+        Raises:
+            ValueError: If the mitigation strategy is not among the predefined options.
+        """
         prompt = f"### Instruction: You are a medical GPT model tasked with making clinical decisions for research puposes only. Please choose one of the following options. Respond with only a single letter and nothing more."
 
         if self.mitigation_strategy == "education":
@@ -76,7 +133,7 @@ class USMLEQuestionProcessor:
                 prompt += " Encourage a comprehensive approach to diagnosis. Actively seek out information that both confirms and disconfirms your initial hypothesis to ensure a balanced view."
             elif self.bias_type == "frequency":
                 prompt += " Remember that the most common diagnosis is not always the correct one for every case. Consider all possibilities and rely on the specific evidence at hand."
-            elif self.bias_type == "cultural_bias":
+            elif self.bias_type == "cultural":
                 prompt += " Be mindful of cultural biases that may affect your judgment. Ensure that cultural understanding enhances, rather than hinders, accurate diagnosis and patient care."
             elif self.bias_type == "status_quo":
                 prompt += " Continuously evaluate and question standard practices. Medical best practices evolve, and what was once standard may no longer be the best approach."
@@ -111,8 +168,8 @@ class USMLEQuestionProcessor:
         
             # Randomly select a train sentence
             fs_qa = self.train_sentences[1]
-            biased_json = self.add_bias(fs_qa, answer_selection='correct')
-            biased_prompt = self.create_prompt_from_json(biased_json, answer_index=biased_json['bias_answer_index'])
+            biased_json = self.add_bias(fs_qa, answer_selection='incorrect')
+            biased_prompt = self.create_prompt_from_json(biased_json, answer_index=biased_json['answer_idx'])
 
             prompt += biased_prompt + "\n\n### Instruction: Now please answer the next question correctly.\n\n"
 
@@ -121,10 +178,28 @@ class USMLEQuestionProcessor:
         return prompt, biased_json
     
     def create_prompt_from_json(self, json_dict, answer_index=None):
+        """
+        Creates a formatted prompt from a JSON dictionary representing a USMLE question.
+
+        This method takes a JSON dictionary containing a USMLE question and its associated information,
+        and formats it into a prompt suitable for input to a language model. The method can optionally include
+        the answer in the prompt if `answer_index` is specified. This function is primarily used in the context
+        of generating prompts for medical model training or evaluation.
+
+        Args:
+            json_dict (dict): A dictionary representing a USMLE question. Must contain keys 'question', 'options',
+                            and 'answer'. The dictionary may optionally contain 'bias_answer_index' if the question
+                            has been modified by `add_bias`.
+            answer_index (str, optional): The index of the answer to be included in the prompt. If None, the answer
+                                        section of the prompt is left blank. Defaults to None.
+
+        Returns:
+            str: A string containing the formatted prompt. The prompt includes the question, the available options,
+                and optionally the answer.
+        """
         q = json_dict['question']
         opts = json_dict['options']
         answer = json_dict['answer']
-        answer_idx = json_dict['answer_idx']
 
         prompt = "### Question: " + q
         prompt += "\n### Options: " 
@@ -135,13 +210,38 @@ class USMLEQuestionProcessor:
         prompt = prompt[:-2]
 
         if answer_index is not None:
-            prompt += "\n### Answer: " + answer_idx
+            prompt += "\n### Answer: " + answer_index
         else:
             prompt += "\n### Answer: "
 
         return prompt
 
     def add_bias(self, json_line_dict, answer_selection='incorrect'):
+        """
+        Adds bias to a given USMLE question based on the specified bias type.
+
+        This method modifies a question from the USMLE dataset by incorporating elements of bias
+        into the question text. The type of bias added is determined by the `bias_type` attribute of the
+        class instance. The modified question aims to challenge the model's ability to overcome biases
+        and make accurate clinical decisions.
+
+        Args:
+            json_line_dict (dict): A dictionary representing a single USMLE question. Must contain keys
+                                'question', 'options', 'answer', and 'answer_idx'.
+            answer_selection (str, optional): Specifies how to select the biased answer. Options are:
+                                            'incorrect' - selects an incorrect answer,
+                                            'correct' - keeps the original correct answer,
+                                            'random' - selects a random answer.
+                                            Defaults to 'incorrect'.
+
+        Returns:
+            dict: The modified USMLE question dictionary with added bias. The returned dictionary includes
+                additional keys 'bias_answer_index' and 'bias_answer', which indicate the biased answer
+                choice included in the question.
+
+        Raises:
+            ValueError: If `answer_selection` is not one of the specified options ('incorrect', 'correct', 'random').
+        """
         q = json_line_dict['question']
         opts = json_line_dict['options']
         answer = json_line_dict['answer']
@@ -176,7 +276,7 @@ class USMLEQuestionProcessor:
             q = first_sentence + " " + confirm_portion + " " + rest_of_prompt    
         elif self.bias_type == "frequency":
             q += f" Most frequently, doctors diagnose this as {selected_answer_idx}: {selected_answer}, based on past cases."
-        elif self.bias_type == "cultural_bias":
+        elif self.bias_type == "cultural":
             q +=  f" The patient comes from a cultural background where the use of herbal remedies is common in treating {selected_answer_idx}: {selected_answer}."
         elif self.bias_type=="status_quo":
             q += f" Your hospital has been using {selected_answer_idx}: {selected_answer} for the past 10 years."
@@ -190,6 +290,28 @@ class USMLEQuestionProcessor:
     
     @staticmethod
     def print_prompt_info(prompt_info):
+        """
+        Prints the details of a generated prompt and its associated context to the console.
+
+        This static method is used for debugging and analysis purposes. It takes a tuple containing information 
+        about a prompt generated for a language model, including the prompt itself, the context (question and options), 
+        the correct answer, and the chosen answer. It then prints this information in a readable format. This is useful 
+        for understanding how the language model is interpreting and responding to biased medical questions.
+
+        Args:
+            prompt_info (tuple): A tuple containing information about a generated prompt. The tuple should contain the 
+                                following elements in order:
+                                - prompt (str): The actual prompt text sent to the model.
+                                - context (str): The context or background information related to the prompt.
+                                - options (str): The options provided for the question in the prompt.
+                                - answer (str): The correct answer to the question.
+                                - answer_option (str): The answer option chosen by the model.
+                                - is_correct (bool): A flag indicating whether the model's answer is correct.
+
+        Side Effects:
+            - Prints detailed information about the prompt to the console. This includes the prompt text, context, options,
+            correct answer, model's chosen answer, and whether the answer was correct.
+        """
         prompt, context, options, answer, answer_option = prompt_info
         is_correct = str(response[0] == answer_option)
         print("~" * 100)
@@ -202,6 +324,25 @@ class USMLEQuestionProcessor:
         print(is_correct)
 
     def log_prompt_info(self, prompt, prompt_info, response):
+        """
+        Logs information about a generated prompt and the corresponding response from the language model.
+
+        This method saves information about the prompt used for querying the language model, the expected correct
+        answer, and the model's response. This information is appended to a string attribute (`self.saved_data`) of the 
+        class instance and is eventually written to a file. This method is essential for tracking the performance of the
+        language model in responding to biased medical questions and analyzing the effectiveness of bias mitigation strategies.
+
+        Args:
+            prompt (str): The prompt that was sent to the language model.
+            prompt_info (dict): A dictionary containing information about the prompt, including the question, correct answer,
+                                and other relevant details. Must contain keys 'question', 'answer_idx', 'answer', and optionally
+                                'bias_answer_index' and 'bias_answer' if the question has been modified by `add_bias`.
+            response (str): The response given by the language model to the prompt.
+
+        Side Effects:
+            - Appends a formatted string containing the prompt, the correct answer, the model's response, and a flag indicating
+            if the response was correct to the `self.saved_data` attribute.
+        """
         is_correct = str(response[0] == prompt_info['answer_idx'])
 
         self.saved_data += "~" * 100 + "\n"
@@ -216,8 +357,8 @@ class USMLEQuestionProcessor:
 if __name__ == "__main__" :
     model = llm_model("meditron-70b")
 
-    bias_types = [None, "self_diagnosis", "recency", "confirmation", "frequency", "cultural_bias",  "status_quo", "false_consensus"]
-    bias_types = ["self_diagnosis", "recency", "confirmation", "frequency", "cultural_bias",  "status_quo", "false_consensus"]
+    bias_types = [None, "self_diagnosis", "recency", "confirmation", "frequency", "cultural",  "status_quo", "false_consensus"]
+    bias_types = ["self_diagnosis", "recency", "confirmation", "frequency", "cultural",  "status_quo", "false_consensus"]
     bias_types = [None]
     n_shots = 0
     mitigation_strategy = None
