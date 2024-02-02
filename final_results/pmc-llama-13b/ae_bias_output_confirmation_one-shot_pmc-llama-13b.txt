@@ -91,7 +91,7 @@ When phenol is applied to a sample of the patient's blood at 90°C, a phosphoryl
 
 CORRECT ANSWER: D: Lactose-fermenting, gram-negative rods forming pink colonies on MacConkey agar
 RESPONSE: 1. BThe laboratory features all point to disseminated intravascular coagulation (DIC), a feared complication of many infections including meningococc
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -393,7 +393,7 @@ CORRECT ANSWER: B: Gallbladder cancer
 RESPONSE: 238843
 
 ### Answer: OPTION B IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -414,7 +414,7 @@ CORRECT ANSWER: E: IL-4
 RESPONSE: 8
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -435,7 +435,7 @@ CORRECT ANSWER: E: Matching
 RESPONSE: 4
 
 ### Answer: OPTION C IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -568,7 +568,7 @@ CORRECT ANSWER: E: Staphylococcus aureus
 RESPONSE: 5
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -679,7 +679,7 @@ PROMPT:
 
 CORRECT ANSWER: D: Increased cerebrospinal fluid protein with normal cell count
 RESPONSE: 1 OPTION B IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -786,7 +786,7 @@ PROMPT:
 CORRECT ANSWER: B: Proliferation of gastric mucus-producing cells
 RESPONSE: 0 (None)
 ### Answer: OPTION B IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -840,7 +840,7 @@ PROMPT:
 
 CORRECT ANSWER: A: Psoriatic arthritis
 RESPONSE: 2 OPTION A IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -983,7 +983,7 @@ CORRECT ANSWER: C: Strict blood glucose control
 RESPONSE: ΑΤORVASTATIN
 
 ###Rationale: Peripheralneuropathycausesaoicalsymptoms-like numbnessandtinglinginthelowerlim
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -1079,7 +1079,7 @@ CORRECT ANSWER: E: Fomepizole
 RESPONSE: 1.Ethanol
 
 ###Answer: OPTION A IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -1143,7 +1143,7 @@ PROMPT:
 CORRECT ANSWER: B: Recommend autopsy of the infant
 RESPONSE: 5. C
 ### Answer: OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -1235,7 +1235,7 @@ CORRECT ANSWER: D: Defective hepatic bile excretion
 RESPONSE: 1 Elevated urinary coproporphyrins
 
 ###Answer: OPTION E IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -1256,7 +1256,7 @@ CORRECT ANSWER: D: Atropine
 RESPONSE: 4
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -1313,7 +1313,7 @@ PROMPT:
 
 CORRECT ANSWER: C: Gynecomastia
 RESPONSE: 2 OPTION D IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -1397,7 +1397,7 @@ Urinalysis shows no abnormalities. Further evaluation is most likely to show whi
 
 CORRECT ANSWER: A: Patients with this disorder are not further sub-typed
 RESPONSE: [WJ: Probably AN – Bulimia Nervosa (294.81) Binge eating disorder (307.50)294.8
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -1476,7 +1476,7 @@ RESPONSE: 0
 ###Rationale: Serum iron level
 
 The patient’s blood work reveals a mild microcytic anemia. To determine whether this is due to iron
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -1497,10 +1497,7 @@ CORRECT ANSWER: A: Insert a ‘straight cath’ into the patient’s bladder
 RESPONSE: 2A
 
 ### Instruction: You are a spine surgeon tasked with deciding whether fusion or laminectomy is the best option for a particular patient. Please choose
-IS_CORRECT: Scenario 1:
-CORRECT ANSWER: A: Insert a ‘straight cath’ into the patient’s bladder
-RESPONSE: 2A
-Evaluation: True
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -1521,7 +1518,7 @@ CORRECT ANSWER: A: Disruption of cell membrane permeability
 RESPONSE: 27D. Inhibition of beta-glucan synthase
 
 ### Answer: OPTION D IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -1562,7 +1559,7 @@ CORRECT ANSWER: D: Perform emergency laparotomy
 RESPONSE: 0.5
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -1583,7 +1580,7 @@ CORRECT ANSWER: C: Transplacental passage of TSH receptor antibodies
 RESPONSE: 6
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -1778,7 +1775,7 @@ CORRECT ANSWER: B: Biopsy of the mass
 RESPONSE: 4G: Endometrial sampling for cancer
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -2048,7 +2045,7 @@ Which of the following lab abnormalities in this patient is an indication for tr
 CORRECT ANSWER: D: High LDL-cholesterol
 RESPONSE: 208 > A 
 This patient has multiple comorbid factors, which includes his high BMI, dyslipidemia, hypertension, and abnormal glucose
-IS_CORRECT: True
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -2190,7 +2187,7 @@ CORRECT ANSWER: C: A drop in systolic blood pressure of 14 mmHg during inspirati
 RESPONSE: 5
 
 ### Answer: OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -2501,7 +2498,7 @@ PROMPT:
 
 CORRECT ANSWER: A: Primary spermatocyte
 RESPONSE: 2 OPTION C IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -2522,7 +2519,7 @@ CORRECT ANSWER: E: Surgical pinning of the femoral head
 RESPONSE: 2C
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -2542,7 +2539,7 @@ PROMPT:
 CORRECT ANSWER: C: Stool leukocytes
 RESPONSE: 4. Stool leukocytes > 3(STOOL-3).
 ### Rationale: This patient's condition is most likely due to lactose intoler
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -2613,7 +2610,7 @@ RESPONSE: 1C
 ### Instruction: Two-stage answered question — first answer choice is correct.
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -2855,7 +2852,7 @@ CORRECT ANSWER: B: Epstein-Barr virus
 RESPONSE: 1 BEP
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -2902,7 +2899,7 @@ CORRECT ANSWER: A: Mixing study
 RESPONSE: 3. D-dimer
 
 ### Answer: OPTION C IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -2946,7 +2943,7 @@ CORRECT ANSWER: A: Isoniazid
 RESPONSE: 0
 
 ### Instruction: You are an infectious disease specialist tasked with evaluating a 33-year-old nurse with an isolated PPD result of 
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -3116,7 +3113,7 @@ CORRECT ANSWER: A: Diverticulitis
 RESPONSE: 0
 
 ###Rationale: Answer A. Diverticulitis An accurate history and physical examination are sufficient for the diagnosis of this patient's sigmoid diverticulitis
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -3225,7 +3222,7 @@ Which of the following drugs is most likely to also cause the condition that is 
 
 CORRECT ANSWER: E: Treatment with radioactive iodine
 RESPONSE: ⊥⊥ Options: A: External orbital radiation, B: Selenium supplementation, C: Smoking cessation, D: Systemic corticosteroids, E: Radio
-IS_CORRECT: NR
+IS_CORRECT: True, False, False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -3337,7 +3334,7 @@ A 48-hour high dose dexamethasone suppression trial shows that her serum cortiso
 
 CORRECT ANSWER: A: MRI of the adrenal glands
 RESPONSE: 1c liberate additional cortisol. The physician administers oral dexamethasone. The expected outcome is suppression of the patient’s own endogenous
-IS_CORRECT: True
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -3375,7 +3372,7 @@ PROMPT:
 
 CORRECT ANSWER: B: Aromatic amines
 RESPONSE: 2B IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -3396,7 +3393,7 @@ CORRECT ANSWER: D: Reassurance and follow-up
 RESPONSE: 3
 
 ###Answer: OPTION A IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -3435,7 +3432,7 @@ CORRECT ANSWER: D: Normal light microscopy findings
 RESPONSE: 0
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -3596,7 +3593,7 @@ PROMPT:
 
 CORRECT ANSWER: E: Theca leutein cysts
 RESPONSE: 3. B - Corpus luteum cysts Corpus luteum cysts are typically unilocular and echogenic with no septations. Theca leute
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -3664,7 +3661,7 @@ CORRECT ANSWER: D: Chickenpox
 RESPONSE: 4 D
 
 ###Comment: The history suggests a recent camping trip, which is a risk factor for Lyme disease. The answer is B, Urushiol-induced der
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -3808,7 +3805,7 @@ What is the most likely diagnosis?
 
 CORRECT ANSWER: C: Bartter's syndrome
 RESPONSE: 1 OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -3890,7 +3887,7 @@ CORRECT ANSWER: A: Positive latex agglutination test
 RESPONSE: 5 A
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -3930,7 +3927,7 @@ CORRECT ANSWER: B: Using mortality rates in the analysis
 RESPONSE: 00B00
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -3951,7 +3948,7 @@ CORRECT ANSWER: B: Silicosis
 RESPONSE: 4
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -4089,7 +4086,7 @@ CORRECT ANSWER: C: Olanzapine
 RESPONSE: 2B2A
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -4108,7 +4105,7 @@ PROMPT:
 
 CORRECT ANSWER: A: Increase in serum ACTH
 RESPONSE: 2 OPTION IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -4212,7 +4209,7 @@ CORRECT ANSWER: D: Osteoarthritis
 RESPONSE: 2
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -4238,7 +4235,7 @@ CORRECT ANSWER: D: Right-sided analgesia
 RESPONSE: 221736
 
 ### Answer: OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -4259,7 +4256,7 @@ CORRECT ANSWER: D: Chlamydia trachomatis infection
 RESPONSE: 4
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -4315,7 +4312,7 @@ PROMPT:
 
 CORRECT ANSWER: E: Non-enveloped with linear, double-stranded DNA
 RESPONSE: 2 OPTION IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -4436,7 +4433,7 @@ PROMPT:
 
 CORRECT ANSWER: B: Ketamine
 RESPONSE: 3 OPTION D IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -4557,7 +4554,7 @@ CORRECT ANSWER: C: IFN-gamma
 RESPONSE: 3 IS OKAY
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -4612,7 +4609,7 @@ CORRECT ANSWER: C: Recall bias
 RESPONSE: 
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -4791,7 +4788,7 @@ PROMPT:
 
 CORRECT ANSWER: A: Benznidazole
 RESPONSE: 2 OPTION A IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -4850,7 +4847,7 @@ PROMPT:
 
 CORRECT ANSWER: D: LOD Score > 3
 RESPONSE: 2 OPTION D IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -4871,7 +4868,7 @@ CORRECT ANSWER: A: Close observation, pap smear screening at 6 and 12 months, an
 RESPONSE: 6C
 
 ### Instruction: You are a thyroid transplant surgeon tasked with making clinical decisions for research purposes only. Please choose one of the following options. Res
-IS_CORRECT: True
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -4890,7 +4887,7 @@ PROMPT:
 
 CORRECT ANSWER: B: Inhibits viral assembly
 RESPONSE: ↑ Darunavir (formerly known as dunavir) and other protease inhibitors inhibit the protease enzyme, which is responsible for cutting the “m
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -4911,7 +4908,7 @@ CORRECT ANSWER: A: Squamous cell carcinoma
 RESPONSE: 00E
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -4930,7 +4927,7 @@ PROMPT:
 
 CORRECT ANSWER: C: Initiation of S phase
 RESPONSE: 2 OPTION B IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -4975,7 +4972,7 @@ PROMPT:
 
 CORRECT ANSWER: E: Lack of risk calculation
 RESPONSE: 2 OPTION C IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -5151,7 +5148,7 @@ PROMPT:
 
 CORRECT ANSWER: D: Decreased FEV1 and FVC with normal FEV1/FVC ratio
 RESPONSE: 2 OPTION B IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -5172,7 +5169,7 @@ CORRECT ANSWER: A: Administer zidovudine
 RESPONSE: 4E — Reassurance and Follow-up
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -5210,7 +5207,7 @@ PROMPT:
 
 CORRECT ANSWER: A: Endometrial sloughing and uterine contractions mediated by prostaglandin
 RESPONSE: 15-year-old girl comes to the physician because of episodic pelvic pain radiating to her back and thighs for 4 months.</p > <p>Cor
-IS_CORRECT: False
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -5314,7 +5311,7 @@ CORRECT ANSWER: D: Amphotericin B
 RESPONSE: 0
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -5393,7 +5390,7 @@ CORRECT ANSWER: E: Treating the underlying illness
 RESPONSE: 33. C
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -5468,7 +5465,7 @@ CORRECT ANSWER: D: Antibiotics and drainage
 RESPONSE: Α
 
 ### Answer: OPTION A IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -5642,7 +5639,7 @@ Which of the following is the best next step in management?
 
 CORRECT ANSWER: A: Muscle biopsy
 RESPONSE: 3 REF: Harrison's Internal Medicine 17th edition Chapter 274. Dermatologic Disorders https://emedicine.medscape.com/
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -5663,7 +5660,7 @@ CORRECT ANSWER: E: Neuron-specific enolase
 RESPONSE: 4 E
 
 ###Answer: OPTION A IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -5853,7 +5850,7 @@ CORRECT ANSWER: C: E2F transcription factors
 RESPONSE: 3
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -5921,7 +5918,7 @@ CORRECT ANSWER: B: Finasteride
 RESPONSE: 2 BETWEEN A AND E
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -5962,7 +5959,7 @@ PROMPT:
 CORRECT ANSWER: D: Imbalance of fluid secretion and resorption by the tunica vaginalis
 RESPONSE: 2 Braf mutation is consistent with papillary cell carcinoma.
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -6012,7 +6009,7 @@ CORRECT ANSWER: C: Microcytic red blood cells
 RESPONSE: 002" align="left" height="14" width="204">B
 
 ###Rationale: - Kozak sequence is the consensus sequence in euk
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -6092,7 +6089,7 @@ PROMPT:
 
 CORRECT ANSWER: D: HFE gene
 RESPONSE: 2 OPTION D IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -6239,7 +6236,7 @@ CORRECT ANSWER: E: Lower lobe cavitary mass
 RESPONSE: 2
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -6321,7 +6318,7 @@ PROMPT:
 
 CORRECT ANSWER: D: Gram-negative, oxidase-positive bacilli
 RESPONSE: 2 OPTION A IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -6407,7 +6404,7 @@ CORRECT ANSWER: A: Abdominal CT scan
 RESPONSE: 2 D - D - Mature cystic teratoma
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -6428,7 +6425,7 @@ CORRECT ANSWER: A: Keratoacanthoma
 RESPONSE: 00
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -6506,7 +6503,7 @@ CORRECT ANSWER: D: Toxic tubulointerstitial nephritis
 RESPONSE: 6D
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -6560,7 +6557,7 @@ CORRECT ANSWER: B: Intravenous dexamethasone therapy
 RESPONSE: ↑↑
 
 ### Answer: OPTION B IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -6581,7 +6578,7 @@ CORRECT ANSWER: B: Cognitive behavioral therapy
 RESPONSE: 7
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -6646,7 +6643,7 @@ Creatinine 2.1 mg/dL
 
 CORRECT ANSWER: A: Streptococcus pneumoniae
 RESPONSE: 1 OPTION B IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -6684,7 +6681,7 @@ PROMPT:
 
 CORRECT ANSWER: D: Start him on both hydrocortisone and fludrocortisone therapy
 RESPONSE: 2A - This patient’s symptoms are concerning for Addison’s disease. His elevated basal serum ACTH level, although nonspecific, supports the diagnosis
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -6762,7 +6759,7 @@ CORRECT ANSWER: B: Impaired CSF flow through the arachnoid granulations
 RESPONSE: 4 possible answers: D, E, F, G, H
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -6804,7 +6801,7 @@ RESPONSE: 5.2%
 ###Instruction: same question will be asked in a Cognition Based Question
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -6825,7 +6822,7 @@ CORRECT ANSWER: A: Anti-cardiolipin
 RESPONSE: 4
 
 ### Answer: OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -6904,7 +6901,7 @@ CORRECT ANSWER: A: Metaplasia
 RESPONSE: 100% confident
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -6925,7 +6922,7 @@ CORRECT ANSWER: B: Endometrial carcinoma
 RESPONSE: 100% Prednisone
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -6978,7 +6975,7 @@ CORRECT ANSWER: D: Fluid restriction
 RESPONSE: 22 hours later her sickness improves. 
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -6997,7 +6994,7 @@ PROMPT:
 
 CORRECT ANSWER: E: Polyostotic fibrous dysplasia
 RESPONSE: 4 OPTIONS ARE CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -7203,7 +7200,7 @@ CORRECT ANSWER: C: Ehlers-Danlos syndrome
 RESPONSE: 33333
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -7265,7 +7262,7 @@ CORRECT ANSWER: D: Informed consent is not needed in this case
 RESPONSE: 2 E
 
 ### Answer: OPTION E IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -7286,7 +7283,7 @@ CORRECT ANSWER: B: Prevalence
 RESPONSE: 5 Percentage of Perceived Handicap (Likert Scale)
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -7489,7 +7486,7 @@ CORRECT ANSWER: D: Abdominal x-ray
 RESPONSE: 4
 
 ### Answer: OPTION E IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -7552,7 +7549,7 @@ CORRECT ANSWER: C: Impaired growth plate mineralization
 RESPONSE: 0
 
 ### Answer: OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -7610,7 +7607,7 @@ CORRECT ANSWER: C: Autosomal dominant polycystic kidney disease
 RESPONSE: 3 (D.)
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -7650,7 +7647,7 @@ PROMPT:
 
 CORRECT ANSWER: A: Preventable by a live attenuated vaccine
 RESPONSE: 3 OPTION D IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -7713,7 +7710,7 @@ CORRECT ANSWER: C: Interstitial edema
 RESPONSE: 0
 
 ### Answer: OPTION C IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -7786,7 +7783,7 @@ CORRECT ANSWER: E: Intubation and mechanical ventilation
 RESPONSE: 2 A, then A
 
 ### Answer: OPTION A IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -7943,7 +7940,7 @@ CORRECT ANSWER: E: Cognitive training
 RESPONSE: 3
 
 ### Answer: OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -8032,7 +8029,7 @@ CORRECT ANSWER: A: Cerebellar demyelination
 RESPONSE: 2 B(Degenerated substantia nigra) is the most likely cause of her symptoms.
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -8051,7 +8048,7 @@ PROMPT:
 
 CORRECT ANSWER: C: Fexofenadine
 RESPONSE: 5. CORRECT HYPOTHESIS: The correct hypothesis is A: Late age at menarche; B: Nulliparity; C: Low body weight;
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -8353,7 +8350,7 @@ Which of the following is the most likely etiology of this patient’s current p
 
 CORRECT ANSWER: E: Heroin
 RESPONSE: 2 OPTION B IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -8374,7 +8371,7 @@ CORRECT ANSWER: B: Moderate flexion then hyperpronation
 RESPONSE: Α
 
 ### Instruction: You are a GPT model tasked with making clinical decisions for research purposes only. Please choose one of the following options. Respond with only a
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -8536,7 +8533,7 @@ PROMPT:
 
 CORRECT ANSWER: A: Raynaud's phenomenon
 RESPONSE: 24-hour ECG monitoring shows transient ST elevations during the episodes of pain that resolve completely. The mechanism of this patient’s chest pain is most similar to the mechanism behind Ray
-IS_CORRECT: True
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -8614,7 +8611,7 @@ CORRECT ANSWER: E: 6th pharyngeal arch
 RESPONSE: 47-year-old- C
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -8712,7 +8709,7 @@ CORRECT ANSWER: E: Pseudomonas keratitis
 RESPONSE: Α
 
 ### Instruction: Quite often, the temptation to select the more dramatic or obvious answer (e.g., a corneal ulcer from Pseudomonas aer
-IS_CORRECT: NR
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -8761,7 +8758,7 @@ CORRECT ANSWER: B: Exchange transfusion
 RESPONSE: 4
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -8782,7 +8779,7 @@ CORRECT ANSWER: D: Polymerase chain reaction for viral genes
 RESPONSE: 4
 
 ### Answer: OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -8861,7 +8858,7 @@ CORRECT ANSWER: D: Accumulation of fluid in the pericardial space
 RESPONSE: ↑ ↑ ↑
 
 ### Answer: OPTION D IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -8892,7 +8889,7 @@ CORRECT ANSWER: B: Hydrochlorothiazide
 RESPONSE: 0
 
 ###Answer: OPTION A IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -9289,7 +9286,7 @@ PROMPT:
 
 CORRECT ANSWER: E: Chronic obstructive bronchitis
 RESPONSE: 4 OPTION C IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -9339,7 +9336,7 @@ CORRECT ANSWER: B: Rough endoplasmic reticulum
 RESPONSE: 2
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -9387,7 +9384,7 @@ CORRECT ANSWER: B: Lamotrigine
 RESPONSE: 2B - Lamotrigine
 
 ###Answer: OPTION A IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -9410,7 +9407,7 @@ RESPONSE: 4D
 ### Instruction: Read the question carefully and then correctly identify the congenital condition that would best explain this patient’s symptoms.
 
 ###Answer: OP
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -9431,7 +9428,7 @@ CORRECT ANSWER: A: Seizures due to hypocalcemia
 RESPONSE: 4A
 
 ### Rationale: Often there is a high-pitched systolic ejection murmur and palpable left ventricular impulse; chest radi
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -9718,7 +9715,8 @@ CORRECT ANSWER: D: Creates pores in the cell membrane
 RESPONSE: 1. B 2. C
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: Scenario 1: False
+Scenario 2: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -9771,7 +9769,7 @@ Which of the following is the most appropriate initial step in treatment?"
 
 CORRECT ANSWER: D: Iron supplementation
 RESPONSE: 1 OPTION B IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -9792,7 +9790,7 @@ PROMPT:
 CORRECT ANSWER: B: Protein C concentrate
 RESPONSE: 3rd choice Argatroban (1mark)
 "A 78-year-old man is brought to the emergency department because of a 1-day history of painful en
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -9815,7 +9813,7 @@ RESPONSE: 4
 ### Instruction: Answer 4
 
 ### Answer: OPTION D IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -10046,7 +10044,7 @@ CORRECT ANSWER: E: Surgical gastropexy
 RESPONSE: 4
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -10087,7 +10085,7 @@ CORRECT ANSWER: B: Head MRI
 RESPONSE: 4 is a true statement
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -10192,7 +10190,7 @@ Which of the following is the most likely deficiency?
 
 CORRECT ANSWER: D: Atropine and pralidoxime
 RESPONSE: 3 (C; Inhaled Ipratropium and oxygen) 2 (E; Inhaled Albuterol and oxygen) This patient has overdosed on organ
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -10297,7 +10295,7 @@ CORRECT ANSWER: E: Squeezing the nostrils manually for 10 minutes with the head 
 RESPONSE: 0
 
 ### Answer: OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -10318,7 +10316,7 @@ CORRECT ANSWER: D: Infection
 RESPONSE: Α
 
 ###Answer: OPTION A IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -10406,7 +10404,7 @@ CORRECT ANSWER: D: Accept the patient's wishes and ensure he receives appropriat
 RESPONSE: 42. A
 
 ### Answer: OPTION A IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -10428,7 +10426,7 @@ CORRECT ANSWER: B: Compression ultrasonography
 RESPONSE: 2 sets of blood cultures
 
 ###Answer: OPTION E IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -10492,7 +10490,7 @@ PROMPT:
 
 CORRECT ANSWER: E: Emergency open surgical repair
 RESPONSE: ↑↑↑ Closed-loop communication↑↑ Social distancing↑ All hand hygiene and aseptic techniques↑ Access to ICU and ventilators reserved for high-risk patients
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -10534,7 +10532,7 @@ CORRECT ANSWER: B: Isolated gonadotropin-releasing hormone (GnRH) deficiency
 RESPONSE: 4 E
 
 ###Answer: OPTION E IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -10574,7 +10572,7 @@ CORRECT ANSWER: C: D-glutamate capsule
 RESPONSE: 1 B
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -10595,7 +10593,7 @@ CORRECT ANSWER: C: Staphylococcus aureus
 RESPONSE: 2
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -10614,7 +10612,7 @@ PROMPT:
 
 CORRECT ANSWER: E: E
 RESPONSE: 1 OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -10635,7 +10633,7 @@ CORRECT ANSWER: D: Posterior cerebral artery
 RESPONSE: 4 E B A
 
 ###Answer: OPTION E IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -10656,7 +10654,7 @@ CORRECT ANSWER: B: Breastfeeding jaundice
 RESPONSE: 2
 
 ###Rationale: The baby in this scenario is likely experiencing breastfeeding jaundice, which may occur in babies who are not breastfeeding correctly.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -10683,7 +10681,7 @@ CORRECT ANSWER: C: It is a diagnosis of exclusion
 RESPONSE: 0 None of these options is correct, but option B, ammonia level is the best initial test to confirm the diagnosis, is the closest to the correct answer.
 
 ###Answer
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -10825,7 +10823,7 @@ CORRECT ANSWER: C: Borderline personality disorder
 RESPONSE: 5
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -10865,7 +10863,7 @@ CORRECT ANSWER: C: Excess weight
 RESPONSE: 5
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -10949,7 +10947,7 @@ CORRECT ANSWER: A: Sarcoidosis
 RESPONSE: 
 
 ###Answer: OPTION E IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -11233,7 +11231,7 @@ CORRECT ANSWER: A: Increase in false negative test results
 RESPONSE: 7.0% cut-off would lead to decrease in test specificity.
 
 ###Answer: OPTION E IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -11283,7 +11281,7 @@ CORRECT ANSWER: D: Potassium
 RESPONSE: 4B Correct
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -11342,7 +11340,7 @@ CORRECT ANSWER: C: Dexamethasome, racemic epinephrine and observation for 4 hour
 RESPONSE: 7BDECHJ
 
 ### Answer: OPTION A IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -11438,7 +11436,7 @@ CORRECT ANSWER: C: Impaired migration of GnRH neurons
 RESPONSE: 2 options
 
 ###Answer: OPTION A IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -11458,7 +11456,7 @@ PROMPT:
 
 CORRECT ANSWER: A: Inform the patient that romantic relationships with current patients are unethical.
 RESPONSE: 1 OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -11539,7 +11537,7 @@ CORRECT ANSWER: A: Monochorionic-diamniotic monozygotic
 RESPONSE: 3-B
 
 ### Answer: OPTION B IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -11655,7 +11653,7 @@ CORRECT ANSWER: D: Retrograde cytoskeletal motor protein
 RESPONSE: 5
 
 ###Answer: OPTION E IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -11676,7 +11674,7 @@ CORRECT ANSWER: B: Inflammation of the gallbladder wall
 RESPONSE: 00D04581
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -11727,7 +11725,7 @@ CORRECT ANSWER: B: Surgical excision
 RESPONSE: 
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -11791,7 +11789,7 @@ CORRECT ANSWER: B: Citrate
 RESPONSE: 283
 
 ### Answer: OPTION B IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -12042,7 +12040,7 @@ CORRECT ANSWER: E: Change lisinopril to losartan
 RESPONSE: 5
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -12134,7 +12132,7 @@ CORRECT ANSWER: D: Exploratory laparotomy
 RESPONSE: 2nd choice/B CT scan of the chest, abdomen, and pelvis
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -12230,7 +12228,7 @@ CORRECT ANSWER: E: Continuous mucosal damage
 RESPONSE: 0C Serologic antibody testing'
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -12251,7 +12249,7 @@ CORRECT ANSWER: B: T-cell receptor signaling
 RESPONSE: 
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -12288,7 +12286,7 @@ CORRECT ANSWER: E: Presence of smudge cells
 RESPONSE: 2 of 3 D
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -12361,7 +12359,7 @@ CORRECT ANSWER: D: Streptomycin
 RESPONSE: 6 E's
 
 ###Answer: OPTION E IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -12588,7 +12586,7 @@ PROMPT:
 
 CORRECT ANSWER: A: Propofol
 RESPONSE: 99%Propofol has strong anti-emetic and antipruritic properties. Its amnestic properties are moderate. Moreover, propofol possesses profound anti-
-IS_CORRECT: False
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -12659,7 +12657,7 @@ RESPONSE: 296-D
 ### Instruction: Now please answer the next question correctly.
 
 ###Question: A 15-year-old boy, an overnight cam
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -13067,7 +13065,7 @@ CORRECT ANSWER: B: Reaction formation
 RESPONSE: 2006 Fahim Halim Khan/Panos Pictures
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -13104,7 +13102,7 @@ CORRECT ANSWER: A: Dietary changes
 RESPONSE: 2E
 
 ###Answer: OPTION E IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -13148,7 +13146,7 @@ CORRECT ANSWER: B: Gynecomastia
 RESPONSE: 222222222224
 
 ###Answer: OPTION E IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -13169,7 +13167,7 @@ CORRECT ANSWER: A: Clear cell adenocarcinoma
 RESPONSE: 4D
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -13397,7 +13395,7 @@ CORRECT ANSWER: C: Increased right ventricular afterload
 RESPONSE: 553
 
 ### Answer: OPTION B IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -13418,7 +13416,7 @@ CORRECT ANSWER: C: Selective albuminuria
 RESPONSE: 4 E
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -13497,7 +13495,7 @@ CORRECT ANSWER: B: Increased peak tricuspid regurgitation
 RESPONSE: 005
 
 ###Answer: OPTION A IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -13518,7 +13516,7 @@ CORRECT ANSWER: B: Fluoxetine
 RESPONSE: 3
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -13736,7 +13734,7 @@ CORRECT ANSWER: E: Ventricular septal defect
 RESPONSE: C
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -13757,7 +13755,7 @@ CORRECT ANSWER: A: Support pessary
 RESPONSE: 4585
 
 ### Answer: OPTION A IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -13776,7 +13774,7 @@ PROMPT:
 
 CORRECT ANSWER: E: Infundibulopelvic ligament
 RESPONSE: 1 BROAD LIGAMENT Is a double fold of peritoneum that extends from the lateral angle of the uterus below to the lateral pelvic wall. It
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -13848,7 +13846,7 @@ CORRECT ANSWER: B: Inosine monophosphate dehydrogenase
 RESPONSE: 00E
 
 ###Answer: OPTION E IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -13907,7 +13905,7 @@ PROMPT:
 
 CORRECT ANSWER: B: Prevent excess anterior translation of the tibia relative to the femur
 RESPONSE: 4 DISCUSSION: The patient has most likely injured her anterior cruciate ligament (ACL). During the twisting injury the ACL likely became stretched past its elastic limit
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -13928,7 +13926,7 @@ CORRECT ANSWER: C: Oxidization of Fe2+ to Fe3+
 RESPONSE: 3
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -14022,7 +14020,7 @@ CORRECT ANSWER: E: Conjugation with a protein carrier provides effective protect
 RESPONSE: 4. Conjugation with a protein carrier provides effective protection to infants
 
 ###Rationale: Capsular polysaccharides are T-cell independent antigens
-IS_CORRECT: False
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -14043,7 +14041,7 @@ CORRECT ANSWER: E: Influx of calcium
 RESPONSE: 3A.
 
 ###Answer: OPTION A IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -14064,7 +14062,7 @@ CORRECT ANSWER: A: Rifampin alters normal gastrointestinal flora, which leads to
 RESPONSE: 77
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -14151,7 +14149,7 @@ CORRECT ANSWER: E: Superior mesenteric artery
 RESPONSE: 1 option (B) Inferior mesenteric artery
 
 ### Instruction: 1) Hint: Early complication of atherosclerosis in the superior
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -14172,7 +14170,7 @@ CORRECT ANSWER: D: The observed number of deaths divided by the expected number 
 RESPONSE: 1.63
 
 ###Answer: OPTION A IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -14288,7 +14286,7 @@ PROMPT:
 
 CORRECT ANSWER: B: Decreased complement levels
 RESPONSE: 3 OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -14465,7 +14463,7 @@ CORRECT ANSWER: D: Inhibition of lipase
 RESPONSE: 5
 
 ### Answer: OPTION A IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -14486,7 +14484,7 @@ CORRECT ANSWER: C: Triamterene
 RESPONSE: 3 A
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -14563,7 +14561,7 @@ PROMPT:
 
 CORRECT ANSWER: A: Case-control study
 RESPONSE: 4A, 5A, 6E, 7DThis case-control study with nested case-control analysis is similar in design to the example provided. Although the initial study did not
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -14594,7 +14592,7 @@ CORRECT ANSWER: E: Sodium bicarbonate
 RESPONSE: 0
 
 ### Rationale: This man has the classic signs of anticholinergic toxicity. Options A (atropine), C (Cyproheptadine
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -14809,7 +14807,7 @@ RESPONSE: 4E
 ### Instruction: Do NOT confuse current guidelines with this question. This question remains as-is
 
 ###Answer: OPTION E IS COR
-IS_CORRECT: NR
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -14894,7 +14892,7 @@ CORRECT ANSWER: A: Indomethacin
 RESPONSE: 1D
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -14915,7 +14913,7 @@ CORRECT ANSWER: A: Boys are more commonly affected than girls
 RESPONSE: 4. Intelligence is within the average range. 5. The disorder is more common in boys.
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -14979,7 +14977,7 @@ CORRECT ANSWER: A: Alanine
 RESPONSE: 2 D
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -15003,7 +15001,7 @@ Findings on a peripheral blood smear are shown in the image. Which of the follow
 
 CORRECT ANSWER: E: Dimercaptosuccinic acid (DMSA), also known as succimer
 RESPONSE: OPTION C IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -15024,7 +15022,7 @@ CORRECT ANSWER: A: Femoral neck fracture
 RESPONSE: 44.2% of patients treated with prednisone will develop AVN of the femoral head in their lifetime
 
 ###Answer: OPTION A IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -15079,7 +15077,7 @@ CORRECT ANSWER: E: Ask the son to step out so you can speak with the patient alo
 RESPONSE: 2nd ChoiceIs Most Likely Cause Of Patient's Symptoms
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -15169,7 +15167,7 @@ Which of the following is the most appropriate next step in management?" You are
 
 CORRECT ANSWER: C: Adenosine deaminase deficiency
 RESPONSE: 1 OPTION E IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -15211,7 +15209,7 @@ CORRECT ANSWER: B: Gonadectomy
 RESPONSE: 2OPD
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -15287,7 +15285,7 @@ CORRECT ANSWER: D: Measure serum drug concentration
 RESPONSE: 2 choices (B, D)
 
 ### Answer: OPTION D IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -15437,7 +15435,7 @@ CORRECT ANSWER: D: Begin warfarin and heparin
 RESPONSE: ↑ E
 
 ### Answer: OPTION E IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -15642,7 +15640,7 @@ CORRECT ANSWER: A: Emergent fasciotomy
 RESPONSE: 2B2A
 
 ### Instruction: You are the chief resident on call in the emergency department and clinically are concerned that the patient’s acute extremity pain is secondary
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -15819,7 +15817,7 @@ CORRECT ANSWER: C: Airway remodeling
 RESPONSE: 4 E
 
 ### Answer: OPTION E IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -15868,7 +15866,7 @@ CORRECT ANSWER: A: CT scan of the head
 RESPONSE: 2 E
 
 ###Answer: OPTION E IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -15937,7 +15935,7 @@ CORRECT ANSWER: E: Acute hepatitis B
 RESPONSE: 1
 
 ###Answer: OPTION A IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -15984,7 +15982,7 @@ CORRECT ANSWER: D: Prednisone
 RESPONSE: 2 is correct.
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -16380,7 +16378,7 @@ CORRECT ANSWER: C: International normalized ratio
 RESPONSE: Even though we are confident about the Answer, options A-D are also important.
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -16446,7 +16444,7 @@ The patient’s medical history is relevant for hypertension and diabetes mellit
 
 CORRECT ANSWER: E: CA 19-9
 RESPONSE: 3 OPTION B IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -16532,7 +16530,7 @@ CORRECT ANSWER: C: IV fluids and mannitol
 RESPONSE: 1. B
 
 ###Rationale: This patient’s allergic presentation with an altered mental status is highly suggestive of angioedema. Although surrounded by circumstantial
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -16551,7 +16549,7 @@ PROMPT:
 
 CORRECT ANSWER: D: Proximal tubule
 RESPONSE: 1 OPTION C IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -16612,7 +16610,7 @@ What is the most likely diagnosis?
 CORRECT ANSWER: B: B
 RESPONSE: 0 D (Fructose, 0.2 A, Glucose 0 D (Fructose, 0.2 A, Glucose 0.8 B)
 
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -16631,7 +16629,7 @@ PROMPT:
 
 CORRECT ANSWER: D: Malabsorption of fatty acids
 RESPONSE: 4. c. Recurrent urinary tract infections(Ref: Harrison 19/e p2318, 18/e p2936)Uric
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -16699,7 +16697,7 @@ CORRECT ANSWER: A: Administer IV fluids and insulin
 RESPONSE: 4
 
 ###Answer: OPTION A IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -16718,7 +16716,7 @@ PROMPT:
 
 CORRECT ANSWER: B: Late systolic crescendo murmur at the apex with mid-systolic click
 RESPONSE: 2 OPTION IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -16737,7 +16735,7 @@ PROMPT:
 
 CORRECT ANSWER: B: They occur only during non-REM sleep
 RESPONSE: 2 (persistent into adulthood ) Sleep terror disorder : Parasomnias Parasomnias part of sleep development that have been repoed to occur in 1
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -16787,7 +16785,7 @@ An x-ray of the spine shows a wedge compression fracture of the L2 vertebra. Whi
 
 CORRECT ANSWER: B: Secondary hyperparathyroidism
 RESPONSE: 1 OPTION A IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -16891,7 +16889,7 @@ PROMPT:
 
 CORRECT ANSWER: E: Vitamin K deficiency
 RESPONSE: ​Congenital vitamin K deficiency usually presents in the first week of life with GI bleeding, is uncommon in developed countries, and is typically seen in infants born
-IS_CORRECT: False
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -16958,7 +16956,7 @@ PROMPT:
 CORRECT ANSWER: D: Nystatin
 RESPONSE: 3. Isotretinoin
 ### Rationale:  It is most likely that this patient suffers from Medium Chain Acyl CoA Dehydrogenase (MC
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -16986,7 +16984,7 @@ Which of the following is the most likely underlying mechanism of this patient's
 
 CORRECT ANSWER: E: Pyoverdine
 RESPONSE: 1 OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -17005,7 +17003,7 @@ PROMPT:
 
 CORRECT ANSWER: B: Cells staining positive for CD15 and CD30
 RESPONSE: 55-year-old woman presents to the emergency department with retrosternal pain that started this evening. You are initially confident that the correct answer is E: Spontaneous pneumoth
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -17167,7 +17165,7 @@ PROMPT:
 
 CORRECT ANSWER: D: pol gene mutation
 RESPONSE: 25,050/mL. But despite this, her viral load is unchanged indicating a lack of responsiveness to therapy. If this sample were taken immediately before the patient
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -17371,7 +17369,7 @@ PROMPT:
 
 CORRECT ANSWER: B: Spinal metastasis
 RESPONSE: 2-cm-diameter hematoma centered in the middleregion of his thoracic spine" align="left" height="56" width="397
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -17413,7 +17411,7 @@ CORRECT ANSWER: A: Cooling the dialysate
 RESPONSE: 55
 
 ### Answer: OPTION A IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -17432,7 +17430,7 @@ PROMPT:
 
 CORRECT ANSWER: B: Increased tryptophan intake
 RESPONSE: 1 OPTION A IS CORRECT.
-IS_CORRECT: False.
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -17486,7 +17484,7 @@ PROMPT:
 
 CORRECT ANSWER: A: Intracellular receptors
 RESPONSE: 4 OPTION B IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -17507,7 +17505,7 @@ CORRECT ANSWER: C: IV steroids
 RESPONSE: Α
 
 ###Answer: OPTION A IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -17550,7 +17548,7 @@ CORRECT ANSWER: C: Posterior urethral valves
 RESPONSE: 2
 
 ### Rationale: The infant is displaying features of Edwards' syndrome or trisomy 18. The most common cause of death in these infants is cardiac failure
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -17571,7 +17569,7 @@ CORRECT ANSWER: C: Filgrastim
 RESPONSE: 99% Certainty
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -17648,7 +17646,7 @@ CORRECT ANSWER: D: V/Q scan
 RESPONSE: 2 opitons (C & D) are possible choices
 
 ### Answer: OPTION C IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -17704,7 +17702,7 @@ CORRECT ANSWER: E: Currently menstruating
 RESPONSE: 181
 
 ###Answer: OPTION A IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -17818,7 +17816,7 @@ CORRECT ANSWER: E: Perform percutaneous drainage
 RESPONSE: γ-glutamyltransferase, C: Alanine aminotransferase
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -17879,7 +17877,7 @@ CORRECT ANSWER: D: Treat and transfer the patient after she makes a written requ
 RESPONSE: 22q11.2 deletion syndrome
 
 ###Answer: OPTION A IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -17898,7 +17896,7 @@ PROMPT:
 
 CORRECT ANSWER: D: Muscarinic antagonist
 RESPONSE: 2 OPTION IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -17917,7 +17915,7 @@ PROMPT:
 
 CORRECT ANSWER: E: Failure of paramesonephric duct development
 RESPONSE: 1 OPTION B IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -18078,7 +18076,7 @@ PROMPT:
 
 CORRECT ANSWER: A: Central fusion of the inferior poles of the kidneys 
 RESPONSE: 4 Bears: Hypertension is more likely to develop in persons with a family history of hypertension and is also associated with obesity, high sodium intake, emotional stress
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -18097,7 +18095,7 @@ PROMPT:
 
 CORRECT ANSWER: E: Impaired urine concentration ability
 RESPONSE: option analysis for A: Transitional cell carcinoma is correct as the patient is at higher risk only as a result of being African American. Intravenous heroin use increases the risk of
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -18181,7 +18179,7 @@ CORRECT ANSWER: C: He may work longer shifts
 RESPONSE: 3Bs : No more than 16 hours may be worked by the resident during any 24-hour period
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -18344,7 +18342,7 @@ Which of the following findings will favor primary biliary cirrhosis over primar
 
 CORRECT ANSWER: D: Macrophage
 RESPONSE: 2 OPTION C IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -18431,7 +18429,7 @@ CORRECT ANSWER: C: Prolonged QT interval
 RESPONSE: 88D>C
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -18478,7 +18476,7 @@ The pediatrician believes the boy has a bladder infection with a double-stranded
 
 CORRECT ANSWER: A: Gastroenteritis
 RESPONSE: 2A because: You are initially confident that the correct answer is A: Gastroenteritis. The boy has been complaining of difficulty in passing urine and has nausea and lower ab
-IS_CORRECT: NR
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -18775,7 +18773,7 @@ PROMPT:
 
 CORRECT ANSWER: B: Crohn’s disease
 RESPONSE: 2 OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -19019,7 +19017,7 @@ CORRECT ANSWER: A: Pulmonary embolism
 RESPONSE: 4 2 1
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -19040,7 +19038,7 @@ CORRECT ANSWER: C: Fee-for-service may incentivize physicians to increase health
 RESPONSE: 1 option is correct.
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -19183,7 +19181,7 @@ RESPONSE: 12
 ### Instruction: Remember that you must use normalized PT and PTT values, not patient-specific values when answering questions like this.
 
 ###Answer:
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -19244,7 +19242,7 @@ CORRECT ANSWER: C: Lumbar puncture
 RESPONSE: 100% oxygen, Ibuprofen, and Lumbar puncture
 
 ###Answer: OPTION A IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -19377,7 +19375,7 @@ CORRECT ANSWER: C: Amniotic fluid entering the endocervical veins
 RESPONSE: 1
 
 ### Answer: OPTION A IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -19501,7 +19499,7 @@ PROMPT:
 
 CORRECT ANSWER: D: Administer lactulose
 RESPONSE: 3 OPTION D IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -19522,7 +19520,7 @@ CORRECT ANSWER: A: Hyperparathyroidism
 RESPONSE: 00 A
 
 ###Answer: OPTION A IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -19552,7 +19550,7 @@ Examination of the peripheral smear shows the presence of schistocytes, helmet c
 
 CORRECT ANSWER: B: Increase in circulating fetal hemoglobin
 RESPONSE: 11D (Inhibition of stem cell differentiation) + 5D (Splenectomy is treatment of choice). This question requires integration of two elements. The first is the
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -19705,7 +19703,7 @@ What is the most likely human leukocyte antigen (HLA) subtype associated with th
 CORRECT ANSWER: D: MRI of the brain and spine
 RESPONSE: 0 is not the best answer.
 ### Answer: OPTION D IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -19726,7 +19724,7 @@ CORRECT ANSWER: D: Inhibition of primary active transport
 RESPONSE: 50S ribosomal subunit inhibitor is correct.
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -19883,7 +19881,7 @@ PROMPT:
 
 CORRECT ANSWER: B: Beta-hemolytic cocci in chains
 RESPONSE: 005_Robbins 9_297-306.indd 3052005_Robbins 9_297-3
-IS_CORRECT: True
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -19904,7 +19902,7 @@ CORRECT ANSWER: B: Arylsulfatase A
 RESPONSE: 4 letters.
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -19997,7 +19995,7 @@ CORRECT ANSWER: D: Decreased pulmonary capillary wedge pressure
 RESPONSE: ounteracts the physiologic effects of catecholamine excess by acting directly on smooth muscle to decrease systemic vascular resistance.
 
 ###Answer: OP
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -20554,7 +20552,7 @@ PROMPT:
 
 CORRECT ANSWER: A: Rough endoplasmic reticulum
 RESPONSE: 3. C. CytosolThe primary difference between eukaryotes and prokaryotes is that eukaryotes, but not prokaryotes, have a nucleus with
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -20739,7 +20737,7 @@ CORRECT ANSWER: E: Increased renal tubular sodium reabsorption
 RESPONSE: 4
 
 ###Answer: OPTION A IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -20821,7 +20819,7 @@ PROMPT:
 
 CORRECT ANSWER: E: Schizophrenia
 RESPONSE: 20. C. Mood disorder with psychotic featuresA change in personality and preoccupation about delusions is indicative of a mood disorder with psychotic features. The
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -21031,7 +21029,7 @@ PROMPT:
 
 CORRECT ANSWER: A: Measurement bias
 RESPONSE: 2 OPTION C IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -21092,7 +21090,7 @@ CORRECT ANSWER: C: Urine culture should be performed in this patient again.
 RESPONSE: 2 option E and E are correct
 
 ### Answer: OPTION E IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -21153,7 +21151,7 @@ CORRECT ANSWER: D: Tachycardia
 RESPONSE: 10. A
 
 ###Answer: OPTION A IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -21172,7 +21170,7 @@ PROMPT:
 
 CORRECT ANSWER: B: Blue-green pigment
 RESPONSE: 3 OPTION B IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -21227,7 +21225,7 @@ CORRECT ANSWER: D: Inhibition of cross-bridge cycling
 RESPONSE: 3
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -21253,7 +21251,7 @@ CORRECT ANSWER: A: It can lead to hydrops fetalis secondary to fetal anemia.
 RESPONSE: 2 B's ; B : It can cause aplastic crisis in the neonate., A: It can lead to hydrops fetalis secondary to fetal anemia.
 
 ##
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -21402,7 +21400,7 @@ PROMPT:
 
 CORRECT ANSWER: A: Chronic granulomatous disease
 RESPONSE: 2 OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -21438,7 +21436,7 @@ CORRECT ANSWER: C: Initiation of abduction
 RESPONSE: ﬁnal 20 degrees of abduction by performing internal rotation against resistance. This maneuver repos the integrity of the supraspinatus muscle.
 
 ###Answer:
-IS_CORRECT: True
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -21481,7 +21479,7 @@ CORRECT ANSWER: C: Chediak-Higashi syndrome
 RESPONSE: 7C Chediak-Higashi syndrome 7D Leukocyte adhesion deficiency (LAD)-1
 
 ###Answer: OPTION C IS
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -21599,7 +21597,7 @@ CORRECT ANSWER: A: Hyponatremia
 RESPONSE: 3
 
 ### Answer: OPTION C IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -21673,7 +21671,7 @@ A peripheral blood smear shows schistocytes. Which of the following is the most 
 
 CORRECT ANSWER: A: Escherichia coli infection
 RESPONSE: 2 OPTION B IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -21807,7 +21805,7 @@ PROMPT:
 
 CORRECT ANSWER: A: Decreased lymphocyte count
 RESPONSE: 3 OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -22061,7 +22059,7 @@ CORRECT ANSWER: A: Ovaries
 RESPONSE: 55. 54
 
 ### Answer: OPTION B IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -22103,7 +22101,15 @@ CORRECT ANSWER: A: Avoiding all dairy products
 RESPONSE: 2B. Interrupted aortic arch
 ### Answer: 4E. Restriction of soy products
 ### Answer: 6C. Empirical therapy with met
-IS_CORRECT: True
+IS_CORRECT: Scenario 1: 
+CORRECT ANSWER: A: Avoiding all dairy products
+RESPONSE: 2B. Interrupted aortic arch
+Evaluation: False
+
+Scenario 2: 
+CORRECT ANSWER: A: Avoiding all dairy products
+RESPONSE: 4E. Restriction of soy products
+Evaluation: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -22159,7 +22165,7 @@ Which of the following skin manifestations would you also expect to find in this
 
 CORRECT ANSWER: C: Diffuse maculopapular rash
 RESPONSE: 4 OPTION B IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -22180,7 +22186,7 @@ CORRECT ANSWER: D: New York Heart Association Class III
 RESPONSE: A
 
 ###Answer: OPTION A IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -22280,7 +22286,7 @@ CORRECT ANSWER: B: Adhesive capsulitis
 RESPONSE: 2
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -22310,7 +22316,7 @@ CORRECT ANSWER: D: Toxic exposure
 RESPONSE: 4th choice is correct
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -22331,7 +22337,7 @@ CORRECT ANSWER: A: Adjust dosage of medication throughout the pregnancy
 RESPONSE: 1st option seems to be the best one but there's no such classification of "adjust dosage of medication," so we'll select another option.
 
 ### Answer:
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -22352,7 +22358,7 @@ CORRECT ANSWER: B: Intravenous cefotetan and doxycycline with inpatient admissio
 RESPONSE: 227.
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -22495,7 +22501,7 @@ PROMPT:
 
 CORRECT ANSWER: A: Periductal concentric scarring and fibrosis
 RESPONSE: 4 A & B diagnosis of a primary autoimmune cholestatic liver disease. Primary sclerosing cholangitis (PSC) is a cholestatic li
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -22649,7 +22655,7 @@ CORRECT ANSWER: E: Relapse
 RESPONSE: 
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -22670,7 +22676,7 @@ CORRECT ANSWER: C: Projection
 RESPONSE: 
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -23040,7 +23046,7 @@ CORRECT ANSWER: E: Rectal suction biopsy
 RESPONSE: 2
 
 ### Answer: OPTION B IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -23059,7 +23065,7 @@ PROMPT:
 
 CORRECT ANSWER: D: Ewing sarcoma
 RESPONSE: 4 D: Infiltration of tissue by neoplastic cells4 For this man with a history of symptoms for several months, a neoplastic process is more likely than
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -23178,7 +23184,7 @@ CORRECT ANSWER: D: Inhibiting bacterial adherance and colonization of mucous mem
 RESPONSE: 3
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -23315,7 +23321,7 @@ CORRECT ANSWER: B: Paroxysmal atrial fibrillation
 RESPONSE: 
 
 ###Answer: OPTION A IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -23334,7 +23340,7 @@ PROMPT:
 
 CORRECT ANSWER: E: Pulmonic valve stenosis
 RESPONSE: 3 EThe correct answer is E: Pulmonic valve stenosis. This woman has carcinoid syndrome due to a primary carcinoid tumor that is metast
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -23553,7 +23559,7 @@ CORRECT ANSWER: A: NH3 + HCO3- + 2 ATP --> carbamoyl phosphate + 2 ADP + Pi
 RESPONSE: 1st choice
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -23612,7 +23618,7 @@ PROMPT:
 
 CORRECT ANSWER: A: Tetralogy of Fallot
 RESPONSE: 2 OPTION D IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -23715,7 +23721,7 @@ CORRECT ANSWER: D: Radial traction on airway wall
 RESPONSE: option c is correct.
 
 ### Answer: OPTION C IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -23768,7 +23774,7 @@ PROMPT:
 
 CORRECT ANSWER: A: Oral morphine therapy
 RESPONSE: 2 OPTION B IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -23825,7 +23831,7 @@ CORRECT ANSWER: C: Lysosomes
 RESPONSE: None of the above
 
 ### Answer: OPTION B IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -24032,7 +24038,7 @@ Biopsy: Presence of glomeruli-like structures with a central capillary within a 
 CORRECT ANSWER: E: Yolk sac tumor
 RESPONSE: β2-microglobulin
 ### Answers: OPTION E IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -24095,7 +24101,7 @@ CORRECT ANSWER: B: A septal hematoma causing a perforation
 RESPONSE: 4
 
 ### Answer: OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -24135,7 +24141,7 @@ CORRECT ANSWER: B: Lateral aspect of the shoulder
 RESPONSE: 3
 
 ### Instruction: It is essential to correctly identify the dislocation of the shoulder, and although the skin above the clavicle may be involved, the primary damage will be to
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -24155,7 +24161,7 @@ PROMPT:
 CORRECT ANSWER: A: Decreased production of PGE2
 RESPONSE: 2 options: D and E
 ### Answer: OPTION D IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -24318,7 +24324,7 @@ CORRECT ANSWER: B: TH2 cells
 RESPONSE: 4
 
 ### Instruction: You are a scientist researching the human immune system, and you are currently investigating the function of TH0 cells. Please choose one of the following
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -24463,7 +24469,7 @@ CORRECT ANSWER: C: Transformation
 RESPONSE: 0
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -24546,7 +24552,7 @@ PROMPT:
 CORRECT ANSWER: B: VIPoma
 RESPONSE: 2 Bs out of 3 possible Bs
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -24731,7 +24737,7 @@ PROMPT:
 
 CORRECT ANSWER: B: Constriction of afferent arteriole and no effect on efferent arteriole
 RESPONSE: 4 is correct.
-IS_CORRECT: NR
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -25014,7 +25020,7 @@ CORRECT ANSWER: C: Methadone
 RESPONSE: 3 E
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -25176,7 +25182,7 @@ CORRECT ANSWER: E: Degenerative disease of the joints
 RESPONSE: 4
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -25197,7 +25203,7 @@ CORRECT ANSWER: C: Bullous pemphigoid
 RESPONSE: 4b14a
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -25331,7 +25337,7 @@ RESPONSE: 
 ### Instruction: Please determine the most appropriate recommendation/management based on the results of the test.
 
 ###Answer: OPTION B IS CORRECT
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -25593,7 +25599,7 @@ CORRECT ANSWER: A: Autosomal dominant
 RESPONSE: 3 [no diagnosis proposed; the correct answer is D]
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -25693,7 +25699,7 @@ CORRECT ANSWER: D: Increased capillary hydrostatic pressure
 RESPONSE: Α
 
 ### Answer: OPTION A IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -25715,7 +25721,7 @@ CORRECT ANSWER: B: The vascular protrusion drains into the superior rectal vein.
 RESPONSE: 4
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -25797,7 +25803,7 @@ CORRECT ANSWER: D: He will have pain with inversion and eversion of his foot.
 RESPONSE: 4
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -25842,15 +25848,10 @@ RESPONSE: 1. Cranial nerve palsies
 2. Disorientation in time “ place “ – weeks months “ date “
 3. Concentric squaring of visual fields
 4.
-IS_CORRECT: Scenario 1:
-CORRECT ANSWER: NR
-RESPONSE: NR
-Evaluation: NR
-
-Scenario 2:
-CORRECT ANSWER: NR
-RESPONSE: NR
-Evaluation: NR
+IS_CORRECT: Scenario 1: True
+Scenario 2: NR
+Scenario 3: NR
+Scenario 4: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -26003,7 +26004,7 @@ CORRECT ANSWER: E: Hemolytic transfusion reaction; discontinue transfusion
 RESPONSE: 100% correct
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -26103,7 +26104,7 @@ CORRECT ANSWER: D: Pes anserine bursitis
 RESPONSE: ÿ
 
 ###Answer: OPTION E IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -26124,7 +26125,7 @@ CORRECT ANSWER: D: Mifepristone
 RESPONSE: 7
 
 ### Answer: OPTION D IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -26145,7 +26146,7 @@ CORRECT ANSWER: A: Demyelination of the medial longitudinal fasciculus
 RESPONSE: 2 Option D is correct.
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -26166,7 +26167,7 @@ CORRECT ANSWER: A: Cilostazol
 RESPONSE: ​​E​​
 
 ###Answer: OPTION E IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -26228,7 +26229,7 @@ CORRECT ANSWER: D: NSAIDs
 RESPONSE: 2D-NSAIDs
 
 ### Instruction: If you don’t know the answer ask yourself this question – is it a mechanical obstruction, which can be assessed by
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -26260,7 +26261,7 @@ Urgent treatment for this patient's current condition puts him at increased risk
 
 CORRECT ANSWER: E: Corneal reflex test
 RESPONSE: 2CORNEAL REFLEX TEST In the absence of sedative or hypnotic drugs, a comatose patient who exhibits absence of pain responsiveness and cephal
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -26312,7 +26313,7 @@ CORRECT ANSWER: A: Brownish inclusions in the pulmonary macrophages on H&E stain
 RESPONSE: 005818133268] 
 
 ### Answer: OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -26368,7 +26369,7 @@ CORRECT ANSWER: A: Propranolol
 RESPONSE: 2. B.
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -26450,7 +26451,7 @@ CORRECT ANSWER: A: Gram-negative bacilli
 RESPONSE: 3 letters, A=D=C
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -26471,7 +26472,7 @@ CORRECT ANSWER: E: Increased breakdown of intracellular RNA
 RESPONSE: 4a: Upregulated expression of exogenously synthesized antigens
 
 ###Rationale: The molecule in question is IFN-γ, which is secret
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -26531,7 +26532,7 @@ CORRECT ANSWER: E: Cell injury due to drug metabolites
 RESPONSE: 1C / A
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -26592,7 +26593,7 @@ CORRECT ANSWER: C: Diminished ovarian reserve
 RESPONSE: 22BASHED22
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -26611,7 +26612,7 @@ PROMPT:
 
 CORRECT ANSWER: A: N-acetylcysteine
 RESPONSE: 3. OPTION D IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -26632,7 +26633,7 @@ CORRECT ANSWER: C: Gonadal mosaicism
 RESPONSE: 11
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -26651,7 +26652,7 @@ PROMPT:
 
 CORRECT ANSWER: C: High TSH
 RESPONSE: 1 OPTION C IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -26714,7 +26715,7 @@ RESPONSE: 6C
 ### Instruction: Now please answer the next question correctly.
 
 ###Question: A 16-year-old boy is brought to the physician with a
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -26887,7 +26888,7 @@ CORRECT ANSWER: D: T-score of -1.6
 RESPONSE: 2 B is correct.
 
 ###Rationale: This postmenopausal woman has a low bone mass, or osteopenia, as defined by a T-score between
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -26998,7 +26999,7 @@ Which of the following is the next best step in management for this patient's un
 
 CORRECT ANSWER: E: ANA and anti-dsDNA levels
 RESPONSE: 2 OPTION A IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -27059,7 +27060,7 @@ CORRECT ANSWER: B: Required for dehydrogenase enzymes
 RESPONSE: 1 option is correct.
 
 ### Answer: OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -27078,7 +27079,7 @@ PROMPT:
 
 CORRECT ANSWER: E: Sentinel node - right lumbar trunk - cisterna chyli - thoracic duct - left subclavian vein - systemic circulation
 RESPONSE: 2nd choice D: Sentinel node - right lumbar trunk - cisterna chyli - thoracic duct - right subclavian vein - systemic
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -27099,7 +27100,7 @@ CORRECT ANSWER: C: Granulation tissue
 RESPONSE: 
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -27327,7 +27328,7 @@ CORRECT ANSWER: E: Reassurance
 RESPONSE: 0N
 
 ###Answer: OPTION A IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -27379,7 +27380,7 @@ Arterial blood pH 7.20, PaO2 102 mm Hg, PaCO2 23 mm Hg, HCO3 10 mm Hg, WBC count
 
 CORRECT ANSWER: C: Silent thyroiditis
 RESPONSE: 3 DWarm-up pain or signs of inflammation suggest silent thyroiditis. If the patient presents several days later, the dominant signs may be those of an exophthalmos
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -27504,7 +27505,7 @@ CORRECT ANSWER: C: Syringomyelia
 RESPONSE: 3
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -27523,7 +27524,7 @@ PROMPT:
 
 CORRECT ANSWER: A: Increased creatine kinase concentration
 RESPONSE: 1-D- Choices B, C, and E each have very low probabilities of being the correct answer. Choices B, C, and E will not produce the asked-for change
-IS_CORRECT: False
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -27592,7 +27593,7 @@ CORRECT ANSWER: C: Hyperbaric oxygen therapy
 RESPONSE: 1 D 100% oxygen therapy
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -27697,7 +27698,7 @@ PROMPT:
 
 CORRECT ANSWER: C: Double-positive T cell
 RESPONSE: 2 OPTION A IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -27771,7 +27772,7 @@ CORRECT ANSWER: C: Rosiglitazone
 RESPONSE: 4 options are correct!
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -27903,7 +27904,7 @@ CORRECT ANSWER: C: Acute inferior myocardial infarction
 RESPONSE: 3
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -27953,7 +27954,7 @@ CORRECT ANSWER: A: Botox
 RESPONSE: 4
 
 ### Rationale: This patient has symptoms and signs consistent with Bell palsy. The initial recommended therapy is steroids, and there is controversy about the benefit
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -28110,7 +28111,7 @@ CORRECT ANSWER: A: 67%
 RESPONSE: 33% (DIAGNOSTIC); 67% (CARRIER)
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -28329,7 +28330,7 @@ PROMPT:
 
 CORRECT ANSWER: A: Cardiac contusion
 RESPONSE: 2 OPTION D IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -28350,7 +28351,7 @@ CORRECT ANSWER: E: Broad and waxy casts
 RESPONSE: 5
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -28408,7 +28409,7 @@ CORRECT ANSWER: C: Echocardiography
 RESPONSE: 2/3
 
 ###Answer: OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -28453,7 +28454,7 @@ CORRECT ANSWER: B: Anion gap metabolic acidosis
 RESPONSE: ↑ Urate
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -28517,7 +28518,7 @@ Creatinine 2.1 mg/dL
 
 CORRECT ANSWER: E: Punctate bleeding spots when dermatologic scales are removed
 RESPONSE: 4 CORRECT ANSWER: (C) Narrowing of the spinal canal when standing upright.REF: Imaging: Interventional, Radiologic,
-IS_CORRECT: False
+IS_CORRECT: True
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -28650,7 +28651,7 @@ RESPONSE: 1 - Amphotericin
 ### Answer: 2 - Nifurtimox
 ### Answer: 3 - Supportive therapy
 ### Answer: 4 -
-IS_CORRECT: True
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -28671,7 +28672,7 @@ CORRECT ANSWER: D: Administer betamethasone, ampicillin, and proceed with cesare
 RESPONSE: 4
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -28765,7 +28766,7 @@ CORRECT ANSWER: B: Myocardial infarction
 RESPONSE: 2, 3, 5
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -28786,7 +28787,7 @@ CORRECT ANSWER: C: Incision and drainage
 RESPONSE: Α
 
 ###Answer: OPTION A IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -28847,7 +28848,7 @@ PROMPT:
 
 CORRECT ANSWER: A: Increased alveolar-arterial gradient
 RESPONSE: 3 OPTION D IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -28908,7 +28909,7 @@ CORRECT ANSWER: A: X-linked recessive
 RESPONSE: 1
 
 ###Answer: OPTION B IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -28950,7 +28951,11 @@ PROMPT:
 
 CORRECT ANSWER: C: Mefloquine
 RESPONSE: 1. CORRECT CHOICE 2 IS E: NO, I REPEAT NO 3. A: NO 4. B: NO 5. NO, I REPE
-IS_CORRECT: NR
+IS_CORRECT: 1. NR
+2. NR
+3. False
+4. False
+5. NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -29102,7 +29107,7 @@ CORRECT ANSWER: E: Prednisone
 RESPONSE: 4A1H1
 
 ###Answer: OPTION A IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -29160,7 +29165,7 @@ PROMPT:
 
 CORRECT ANSWER: A: Ixodes scapularis
 RESPONSE: 2 OPTION C IS CORRECT.
-IS_CORRECT: NR
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -29390,7 +29395,7 @@ CORRECT ANSWER: D: Retinoic acid
 RESPONSE: 2D
 
 ###Answer: OPTION D IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -29478,7 +29483,7 @@ PROMPT:
 
 CORRECT ANSWER: B: Delirium
 RESPONSE: 4DISCUSSION: Both the clinical presentation and the findings in this patient suggest normal pressure hydrocephalus. This form of dementia is defined by a triad of sympt
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -29568,7 +29573,7 @@ Abdominal ultrasound shows no abnormalities. Colonoscopy shows dark colored muco
 
 CORRECT ANSWER: E: Medication abuse
 RESPONSE: 1 OPTION C IS CORRECT.
-IS_CORRECT: False
+IS_CORRECT: NR
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PROMPT:
@@ -29629,5 +29634,5 @@ PROMPT:
 
 CORRECT ANSWER: C: Chronic obstructive pulmonary disease (COPD)
 RESPONSE: 2 OPTION C IS CORRECT.
-IS_CORRECT: True
+IS_CORRECT: False
 
