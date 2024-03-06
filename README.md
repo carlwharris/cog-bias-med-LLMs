@@ -1,5 +1,5 @@
 # cog-bias-med-LLMS
-Addressing common clinical biases in medical language models. Released as an [arXiv preprint](https://arxiv.org/abs/2402.08113).
+Addressing common clinical biases in medical language models. Released as an [arXiv preprint](https://arxiv.org/abs/2402.08113). Data available via Google Drive link [here](https://drive.google.com/file/d/1GsHYY1xm9JggQALzRoqXJ3MQEHogz7dw/view?usp=sharing).
 
 # Installation
 
