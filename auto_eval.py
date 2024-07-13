@@ -3,12 +3,12 @@ from tqdm import tqdm
 import time
 import os
 
-f_name = "bias_output_self_diagnosis_pmc-llama-13b.txt"
-
 search_str = "llama-2-70b-chat"
 
 # Get all the files in the directory containing the search string
 f_names = [f for f in os.listdir() if search_str in f]
+
+# f_names = ["bias_output_meditron-70b.txt"]
 
 for f_name in f_names:
     with open(f_name, "r", encoding='utf8', errors='ignore') as f:
@@ -50,9 +50,19 @@ for f_name in f_names:
             "Review each scenario and provide your evaluation (True, False, NR) based on the above criteria:\n\n"
         )
 
+        if 'few_shot' or 'one_shot' in f_name:
+            mult_examples = True
+
         start_response = False
+        is_example = False
         for subline in line.split("\n"):
-            if "Options" in subline:
+            if "### Example" in subline:
+                is_example = True
+            
+            if "### Instruction" in subline:
+                is_example = False
+
+            if "Options" in subline and not is_example:
                 # drop ### Options: from subline
                 # subline = subline.split(":")[1].strip()
                 prompt += subline + "\n"
@@ -86,5 +96,8 @@ for f_name in f_names:
         response = re.sub(r"IS_CORRECT: .*", "IS_CORRECT: " + response + "\n", line)
 
         f.write(response + "\n")
+
+        # Pause for 1 second
+        # time.sleep(1)
 
     f.close()

@@ -97,7 +97,7 @@ class llm_model:
             response = "NR"
         return response
     
-    def _query_replicate(self, prompt, max_new_tokens=40):
+    def _query_replicate(self, prompt, max_new_tokens=100):
         if self.model_name == 'llama-2-70b-chat':
             url = "meta/llama-2-70b-chat:02e509c789964a7ea8736978a43525956ef40397be9033abf9fd2badfe68c9e3"
         elif self.model_name == 'mixtral-8x7b-instruct-v0.1':

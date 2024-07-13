@@ -90,8 +90,8 @@ class USMLEQuestionProcessor:
         if bias_type is not None:
             self.f_name += f"_{bias_type}"
 
-            if self.mitigation_strategy is not None:
-                self.f_name += f"-{self.mitigation_strategy}"
+        if self.mitigation_strategy is not None:
+            self.f_name += f"_{self.mitigation_strategy}"
 
         if model_name is not None:
             self.f_name += f"_{model_name}"
@@ -143,8 +143,11 @@ class USMLEQuestionProcessor:
         prompt += "\n\n"
 
         if self.mitigation_strategy == "one-shot":
-            prompt += "### Example: The following is an example of an incorrectly classified question based on cognitive bias.\n"
-        
+            if self.bias_type is None:
+                prompt += "### Example: The following is an example of an incorrectly classified question.\n"
+            else:
+                prompt += "### Example: The following is an example of an incorrectly classified question based on cognitive bias.\n"
+
             # Randomly select a train sentence
             np.random.shuffle(self.train_sentences)
             fs_qa = self.train_sentences[0]
@@ -154,7 +157,10 @@ class USMLEQuestionProcessor:
             prompt += biased_prompt + "\n\n### Instruction: Now please answer the next question correctly.\n\n"
 
         if self.mitigation_strategy == "few-shot":
-            prompt += "### Example 1: The following is an example of an incorrectly classified question based on cognitive bias.\n"
+            if self.bias_type is None:
+                prompt += "### Example 1: The following is an example of an incorrectly classified question.\n"
+            else:
+                prompt += "### Example 1: The following is an example of an incorrectly classified question based on cognitive bias.\n"
         
             # Randomly select a train sentence
             np.random.shuffle(self.train_sentences)
@@ -164,7 +170,10 @@ class USMLEQuestionProcessor:
 
             prompt += biased_prompt + "\n\n"
 
-            prompt += "### Example 2: The following is an example of a correctly classified question despite cognitive bias.\n"
+            if self.bias_type is None:
+                prompt += "### Example 2: The following is an example of a correctly classified question.\n"
+            else:
+                prompt += "### Example 2: The following is an example of a correctly classified question despite cognitive bias.\n"
         
             # Randomly select a train sentence
             fs_qa = self.train_sentences[1]
@@ -289,7 +298,7 @@ class USMLEQuestionProcessor:
         return json_line_dict
     
     @staticmethod
-    def print_prompt_info(prompt_info):
+    def print_prompt_info(prompt, prompt_info, response):
         """
         Prints the details of a generated prompt and its associated context to the console.
 
@@ -312,16 +321,12 @@ class USMLEQuestionProcessor:
             - Prints detailed information about the prompt to the console. This includes the prompt text, context, options,
             correct answer, model's chosen answer, and whether the answer was correct.
         """
-        prompt, context, options, answer, answer_option = prompt_info
-        is_correct = str(response[0] == answer_option)
+        is_correct = str(response[0] == prompt_info['answer_idx'])
         print("~" * 100)
         print(prompt)
-        print(context)
-        print(options)
-        print(answer)
-        print(answer_option)
-        print(response)
-        print(is_correct)
+        print("CORRECT ANSWER: " + prompt_info['answer_idx'] + ": " + prompt_info['answer'] + "\n")
+        print("RESPONSE: " + response + "\n")
+        print("IS_CORRECT: " + is_correct + "\n")
 
     def log_prompt_info(self, prompt, prompt_info, response):
         """
@@ -354,14 +359,15 @@ class USMLEQuestionProcessor:
         with open(self.f_name, "w", encoding='utf8', errors='ignore') as f:
             f.write(self.saved_data)
 
+# source ./.venv/bin/activate; python med_llm_bias.py
 if __name__ == "__main__" :
-    model = llm_model("meditron-70b")
+    model = llm_model("llama-2-70b-chat")
 
-    bias_types = [None, "self_diagnosis", "recency", "confirmation", "frequency", "cultural",  "status_quo", "false_consensus"]
+    # bias_types = [None, "self_diagnosis", "recency", "confirmation", "frequency", "cultural",  "status_quo", "false_consensus"]
     bias_types = ["self_diagnosis", "recency", "confirmation", "frequency", "cultural",  "status_quo", "false_consensus"]
-    bias_types = [None]
-    n_shots = 0
-    mitigation_strategy = None
+    bias_types = ["cultural"]
+    mitigation_strategy = "few-shot"
+
 
     for bias_type in bias_types:
         usmle_sentences = load_usmle_questions()
@@ -370,26 +376,27 @@ if __name__ == "__main__" :
 
         itr = 0
 
-        proc = USMLEQuestionProcessor(model.model_name, bias_type, n_shots=n_shots, mitigation_strategy=mitigation_strategy)
+        proc = USMLEQuestionProcessor(model.model_name, bias_type, mitigation_strategy=mitigation_strategy)
 
         for qa in tqdm(usmle_sentences, total=max_questions):
             itr += 1
             if itr > max_questions: break
             try:
-                prompt, prompt_data = proc.generate_full_prompt(qa)
+                prompt, prompt_info = proc.generate_full_prompt(qa)
                 response = model.query_model(prompt)
-                proc.print_prompt_info(prompt_data)
-                proc.log_prompt_info(prompt_data)
+                proc.print_prompt_info(prompt, prompt_info, response)
+                proc.log_prompt_info(prompt, prompt_info, response)
 
-                time.sleep(2) # avoid dos
+                if model.model_name == "text-bison-001":
+                    time.sleep(2) # avoid dos
                 
             except Exception as e:
                 time.sleep(30) # avoid dos
 
-                prompt, prompt_data = proc.generate_full_prompt(qa)
+                prompt, prompt_info = proc.generate_full_prompt(qa)
                 response = model.query_model(prompt)
-                proc.print_prompt_info(prompt_data)
-                proc.log_prompt_info(prompt_data)
+                proc.print_prompt_info(prompt, prompt_info, response)
+                proc.log_prompt_info(prompt, prompt_info, response)
 
                 print(e, "ERROR")
         

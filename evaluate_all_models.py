@@ -2,7 +2,7 @@ import re
 import os
 import pandas as pd
 
-model = "mixtral-8x7b-instruct-v0.1"
+model = "llama-2-70b-chat"
 max_q = 5000
 step_restriction = None #'step2&3' # None, 'step1', 'step2&3'
 
@@ -77,17 +77,22 @@ def eval_file(f_name):
     return naive_accuracy, ref_ans, corrected_accuracy, correct, total
 
 def parse_file_name(f_name):
-    # Default values
     bias_name = "none"
-    is_mitigated = False
+    mitigation_strategy = "none"
     model_name = ""
 
     models = ['gpt-4-0613', 'mixtral-8x7b-instruct-v0.1', 'gpt-3.5-turbo-0613', 'text-bison-001', 'pmc-llama-13b', 'llama-2-70b-chat', 
               'meditron-70b']
-    bias_types = ["self_diagnosis", "recency", "confirmation", "frequency", "cultural_bias",  "status_quo", "false_consensus"]
+    bias_types = ["self_diagnosis", "recency", "confirmation", "frequency", "cultural",  "status_quo", "false_consensus"]
+    mitigation_strategies = ["mitigated", "education", "one-shot", "few-shot"]
 
-    if "mitigated" in f_name:
-        is_mitigated = True
+    for strat in mitigation_strategies:
+        if strat in f_name:
+            if strat == "mitigated":
+                mitigation_strategy = "education"
+            else:
+                mitigation_strategy = strat
+            break
     
     for model in models:
         if model in f_name:
@@ -99,20 +104,33 @@ def parse_file_name(f_name):
             bias_name = bias_type
             break
 
-    return bias_name, is_mitigated, model_name
+    return model_name, bias_name, mitigation_strategy
 
-results_df = pd.DataFrame(columns=['model', 'bias_type', 'mitigated', 'naive_accuracy', 'ref_ans', 'corrected_accuracy', 'correct', 'total'])
+def bias_type_sort_key(column):
+    return [bias_types.index(bias) if bias in bias_types else len(bias_types) for bias in column]
+
+
+results_df = pd.DataFrame(columns=['model', 'bias_type', 'mitigation_strategy', 'naive_accuracy', 'ref_ans', 'corrected_accuracy', 'correct', 'total'])
 for f_name in f_names:
 
-    bias_name, is_mitigated, model_name = parse_file_name(f_name)
+    model_name, bias_name, mitigation_strategy = parse_file_name(f_name)
     naive_accuracy, ref_ans, corrected_accuracy, correct, total = eval_file(os.path.join(subdir_path, f_name))
 
-    new_row = pd.DataFrame({'model': [model_name], 'bias_type': [bias_name], 'mitigated': [is_mitigated], 'naive_accuracy': [naive_accuracy], 'ref_ans': [ref_ans], 'corrected_accuracy': [corrected_accuracy], 'correct': [correct], 'total': [total]})
+    new_row = pd.DataFrame({'model': [model_name], 'bias_type': [bias_name], 'mitigation_strategy': [mitigation_strategy], 'naive_accuracy': [naive_accuracy], 'ref_ans': [ref_ans], 'corrected_accuracy': [corrected_accuracy], 'correct': [correct], 'total': [total]})
     results_df = pd.concat([results_df, new_row], ignore_index=True)
 
-    bias_types = ["none", "self_diagnosis", "recency", "confirmation", "frequency", "cultural_bias",  "status_quo", "false_consensus"]
+    bias_types = ["none", "self_diagnosis", "recency", "confirmation", "frequency", "cultural",  "status_quo", "false_consensus"]
     # Sort by bias type
-    results_df = results_df.sort_values(by=['bias_type'], key=lambda x: [bias_types.index(i) for i in x])
-    results_df = results_df.sort_values(by=['mitigated'])
+    # results_df = results_df.sort_values(by=['bias_type'], key=lambda x: [bias_types.index(i) for i in x])
+    # results_df = results_df.sort_values(by=['mitigation_strategy'])
+
+    # Create a temporary column for sorting bias_type
+    results_df['bias_type_order'] = results_df['bias_type'].apply(lambda x: bias_types.index(x) if x in bias_types else len(bias_types))
+
+    # Sort by mitigation_strategy first, and then by the temporary bias_type_order column
+    results_df = results_df.sort_values(by=['mitigation_strategy', 'bias_type_order'])
+
+    # Drop the temporary sorting column
+    results_df = results_df.drop(columns=['bias_type_order'])
 
 print(results_df)

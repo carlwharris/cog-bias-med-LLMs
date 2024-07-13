@@ -28,7 +28,7 @@ We've included a copy of the USMLE questions in this repo. You can load a list o
 from med_llm_bias import load_usmle_questions
 test_list = load_usmle_questions()
 train_list = load_usmle_questions(question_set='train')
-all_questions = load_usmle_questions(question_set='all)
+all_questions = load_usmle_questions(question_set='all')
 ```
 
 ### Generating a biased prompt
@@ -45,7 +45,7 @@ and `info['bias_answer']` contains the answer index that was used in the bias
 injection.
 
 For `bias_type`, you can choose from the following options: `None` (no bias), 
-`"self_diagnosis"`, `"recency"`, `"confirmation"`, `"frequency"`, `"cultural_bias"`, 
+`"self_diagnosis"`, `"recency"`, `"confirmation"`, `"frequency"`, `"cultural"`, 
 `"status_quo"`, `"false_consensus"`.
 
 For `mitigation_strategy` you can choose between `None` (no mitigation), `"education"`,
@@ -58,6 +58,9 @@ model = llm_model("gpt-3.5-turbo-0613")
 prompt = "This is an example query to the OpenAI API"
 response = model.query_model(prompt)
 ```
+
+# Dataset
+
 
 # Configuring API Keys
 
