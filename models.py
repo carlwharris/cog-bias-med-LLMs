@@ -99,11 +99,12 @@ class llm_model:
     
     def _query_replicate(self, prompt, max_new_tokens=100):
         if self.model_name == 'llama-2-70b-chat':
-            url = "meta/llama-2-70b-chat:02e509c789964a7ea8736978a43525956ef40397be9033abf9fd2badfe68c9e3"
+            url = "meta/llama-2-70b-chat"
+            output = replicate.run(url, input={"prompt": prompt, "max_new_tokens": max_new_tokens,"system_prompt": "answer"})
         elif self.model_name == 'mixtral-8x7b-instruct-v0.1':
             url = "mistralai/mixtral-8x7b-instruct-v0.1:cf18decbf51c27fed6bbdc3492312c1c903222a56e3fe9ca02d6cbe5198afc10"
         
-        output = replicate.run(url, input={"prompt": prompt, "max_new_tokens": max_new_tokens})
+            output = replicate.run(url, input={"prompt": prompt, "max_new_tokens": max_new_tokens})
         response = ''.join(output)
         
         return response

@@ -2,11 +2,12 @@ import re
 import os
 import pandas as pd
 
-model = "llama-2-70b-chat"
+model = "gpt-3.5-turbo-0613"
 max_q = 5000
 step_restriction = None #'step2&3' # None, 'step1', 'step2&3'
 
-ae_models = ['llama-2-70b-chat', 'pmc-llama-13b']
+# ae_models = ['llama-2-70b-chat', 'pmc-llama-13b']
+ae_models = ['pmc-llama-13b']
 
 subdir_path = os.path.join("final_results", model)
 
@@ -15,6 +16,8 @@ f_names = [f for f in os.listdir(subdir_path) if "bias_output" in f]
 
 if model in ae_models:
     f_names = [f for f in f_names if "ae_" in f]
+else:
+    f_names = [f for f in f_names if "ae_" not in f]
 
 with open("data_clean/questions/US/test.jsonl", encoding="utf8") as f:
     test_sentences = f.readlines()
@@ -83,7 +86,7 @@ def parse_file_name(f_name):
 
     models = ['gpt-4-0613', 'mixtral-8x7b-instruct-v0.1', 'gpt-3.5-turbo-0613', 'text-bison-001', 'pmc-llama-13b', 'llama-2-70b-chat', 
               'meditron-70b']
-    bias_types = ["self_diagnosis", "recency", "confirmation", "frequency", "cultural",  "status_quo", "false_consensus"]
+    bias_types = ["self_diagnosis", "recency", "confirmation_v2", "confirmation", "frequency", "cultural",  "status_quo", "false_consensus_v2", "false_consensus"]
     mitigation_strategies = ["mitigated", "education", "one-shot", "few-shot"]
 
     for strat in mitigation_strategies:

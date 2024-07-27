@@ -3,7 +3,7 @@ from tqdm import tqdm
 import time
 import os
 
-search_str = "llama-2-70b-chat"
+search_str = "pmc-llama-13b"
 
 # Get all the files in the directory containing the search string
 f_names = [f for f in os.listdir() if search_str in f]
